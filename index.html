@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SOME WONDERFUL BOOKS</title>
+        <link rel="icon" type="image/x-icon" href="pic/favicon.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+
+<body>
+    <div class="container">
+        <a type="button" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <img src="pic/bootstrap-icons/three-dots.svg" alt="menuhead">
+        </a>
+    
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Book Category</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group">
+                <button  class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead">
+                    Computer<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+                </button>
+                <div class="collapse" id="demohead">
+                    <div class="list-group" id="category1">
+                        <a href="#prog"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Programming<span class="badge bg-danger rounded-pill">23</span>
+                        </a>
+                        <div id="prog" class="collapse show" data-bs-parent="#category1">.</div>
+                        <a href="#syst" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            System<span class="badge bg-danger rounded-pill">34</span>
+                        </a>
+                        <div id="syst" class="collapse" data-bs-parent="#category1">.</div>
+                        <a href="#netw" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Network<span class="badge bg-danger rounded-pill">15</span>
+                        </a>
+                        <div id="netw" class="collapse" data-bs-parent="#category1">.</div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead1">
+                Mathematics<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+                </button>
+                <div class="collapse" id="demohead1">
+                    <div class="list-group" id="category2">
+                        <a href="#real"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Real Analysis<span class="badge bg-danger rounded-pill">93</span>
+                        </a>
+                        <div id="real" class="collapse show" data-bs-parent="#category2">.</div>
+                        <a href="#comp" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Complex Analysis<span class="badge bg-danger rounded-pill">22</span>
+                        </a>
+                        <div id="comp" class="collapse" data-bs-parent="#category2">.</div>
+                        <a href="#diff" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Differential Equations<span class="badge bg-danger rounded-pill">16</span>
+                        </a>
+                        <div id="diff" class="collapse" data-bs-parent="#category2">.</div>
+                    </div>
+                </div>
+    
+                    <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead2">
+                Economy<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <div class="collapse" id="demohead2">
+                <div class="list-group" id="category3">
+                    <a href="#micr"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Microeconomics<span class="badge bg-danger rounded-pill">45</span>
+                    </a>
+                    <div id="micr" class="collapse show" data-bs-parent="#category3"> </div>
+                    <a href="#macr" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Macroeconomics<span class="badge bg-danger rounded-pill">54</span>
+                    </a>
+                    <div id="macr" class="collapse" data-bs-parent="#category3">.</div>
+                    <a href="#beha" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Behavioral Economics<span class="badge bg-danger rounded-pill">24</span>
+                    </a>
+                    <div id="beha" class="collapse" data-bs-parent="#category3">.</div>
+                </div>
+            </div>
+    
+                    <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead3">
+                Philosophy<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <div class="collapse" id="demohead3">
+                <div class="list-group" id="category4">
+                    <a href="#arist"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Aristotelian Realism<span class="badge bg-danger rounded-pill">new</span>
+                    </a>
+                    <div id="arist" class="collapse show" data-bs-parent="#category4">.</div>
+                    <a href="#kant" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Kantian Conceptualism<span class="badge bg-danger rounded-pill">25</span>
+                    </a>
+                    <div id="kant" class="collapse" data-bs-parent="#category4">.</div>
+                    <a href="#huss" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Husserlian Descriptivism<span class="badge bg-danger rounded-pill">98</span>
+                    </a>
+                    <div id="huss" class="collapse" data-bs-parent="#category4">.</div>
+                </div>
+            </div>
+    
+                    <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead4">
+                Medical<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <div class="collapse" id="demohead4">
+                <div class="list-group" id="category5">
+                    <a href="#alle"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Allergy and Immunology<span class="badge bg-danger rounded-pill">97</span>
+                    </a>
+                    <div id="alle" class="collapse show" data-bs-parent="#category5">.</div>
+                    <a href="#anes" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Anesthesiology<span class="badge bg-danger rounded-pill">44</span>
+                    </a>
+                    <div id="anes" class="collapse" data-bs-parent="#category5">.</div>
+                    <a href="#derm" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Dermatology<span class="badge bg-danger rounded-pill">75</span>
+                    </a>
+                    <div id="derm" class="collapse" data-bs-parent="#category5">.</div>
+                </div>
+            </div>
+           
+            <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead5">
+                History<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead6">
+                Plitics<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead7">
+                Literature<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead8">
+                Business<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill">
+                </a>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                    </ul> 
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-body" type="button"><img src="pic/bootstrap-icons/search.svg" alt="search"> </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        
+
+        <div class="list-group" id="headbar">
+            
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Mathematics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Philosophy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Economy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu3">Business</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu4">Computers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu5">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu6">Medical</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu7">Politics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu8">Literature</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu9">More</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane container active" id="home">
+                <h3>Mathematics</h3>
+            </div>
+            <div class="tab-pane container fade" id="menu1">
+                <h3>Philosophy</h3>
+            </div>
+            <div class="tab-pane container fade" id="menu2">
+                <h3>Economy</h3>
+            </div>
+            <div class="tab-pane container fade" id="menu3">
+                <h3>Business</h3>
+            </div>
+            <div class="tab-pane container fade" id="menu4">
+                <h3>Computer</h3>
+            </div>
+            <div class="tab-pane container fade" id="menu5">
+                <h3>History</h3>
+            </div>
+            <div class="tab-pane container fade" id="menu6">
+                <h3>Medical</h3>
+            </div>
+            <div class="tab-pane container fade" id="menu7">
+                <h3>Politics</h3>
+            </div>
+            <div class="tab-pane container fade" id="menu8">
+                <h3>Literature</h3>
+            </div>
+            <div class="tab-pane container fade" id="menu9">
+                <h3>More</h3>
+            </div>
+        </div>
+
+        <div id="slidepic" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slidepic" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slidepic" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slidepic" data-bs-slide-to="2"></button>
+             </div>
+
+             <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pic/first.jpg" alt="firstslide" style="height:350px;width:100%" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="pic/second.jpg" alt="secondslide" style="height:350px;width:100%" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="pic/third.jpg" alt="thirdslide" style="height:350px;width:100%" class="d-block w-100">
+                </div>
+             </div>
+
+             <button class="carousel-control-prev" type="button" data-bs-target="#slidepic" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#slidepic" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+             </button>
+        </div>
+
+        <div class="card" style="width:90px">
+            <img class="card-img-top" src="pic/conan.jpg" alt="myicon" style="width:100%">
+            
+            <a href="#" class="btn btn-sm d-flex justify-content-between align-items-right">
+                Conan<span class="badge bg-danger rounded-pill">more</span>
+            </a>
+        </div>
+
+        <div class="pt-5 my-3 text-bg-success rounded">
+            <h1 class="display-1 text-center"><strong></strong>10 Nastaa Book Recommendations!</strong><small>You Can't Miss</small></h1>
+            
+                <blockquote class="blockquote">
+                    <p class="lead text-break">“But life is very short and anxious for those who forget the past, neglect the present, and fear the future.” </p>
+                    <footer class="blockquote-footer text-end text-capitalize text-white">Seneca, On the Shortness of Life</footer>
+                </blockquote>
+                <p>Use <kbd>ctrl + c</kbd>to copy the book</p>
+                <div class="alert alert-warning alert-dismissible fade show">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <strong>WELLCOM TO THIS SITE!</strong>You could close this alert.
+                </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3 p-3 text-bg-light rounded">
+                <h1>BOOK</h1>
+                <ul class="list-unstyled">
+                    <li>
+                        <abbr title="The Scope and Limits of Computational Psychology" class="initialism"> 
+                            <div class="spinner-grow spinner-grow-sm text-success"></div>Mind Doesn't Work That Way
+                         <span class="badge bg-danger rounded-pill">New</span>
+                        </abbr>
+                    </li>
+                        <ul class="list-unstyled">
+                            <li>
+                                Jerry A.Fodor<br/>
+                                <button type="button" class="btn btn-outline-success btn-sm">like</button>
+                            </li>
+                            <li>
+                                Recommendation Index:
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:75%">75%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 p-3 text-bg-success rounded">
+                <h1>Intruduction</h1>
+                <ul class="list-unstyled">
+                    <li>
+                        <blockquote class="blockquote">
+                        <p class="lead text-break text-info-60">
+                            "Horribly written (that is Fodor's charm after all) but his argumentation is so ferocious that he ends up loud & clear." 
+                            <img src="pic/minddwtw.jpg" class="img-thumbnail mx-auto d-block img-fluid" alt="mind doesn't work that way" width="60" height="43">
+                            <a href="#" type="button" class="btn btn-outline-warning btn-sm"><span class="spinner-border spinner-border-sm"></span>BUY</a>
+                        </p>
+                        <footer class="blockquote-footer text-end text-capitalize text-warning">From Nassim Table</footer>
+                        </blockquote>
+                        
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="table-responsive-sm container">
+            <table class="table table-hover table-striped">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Booktitle</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Black Swan</td>
+                        <td>Nichola Nassim Table</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <ul class="pagination pagination-sm justify-content-center" style="margin:20px 0">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link active">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <svg class="bi" width="32" height="32" fill="currentColor">
+            <use xlink:href="pic/bootstrap-icons/heart-fill.svg"/>
+          </svg>
+          <svg class="bi" width="32" height="32" fill="currentColor">
+            <use xlink:href="pic/bootstrap-icons/toggles.svg"/>
+          </svg>
+          <svg class="bi" width="32" height="32" fill="currentColor">
+            <use xlink:href="pic/bootstrap-icons/alipay.svg"/>
+            
+          </svg>
+        <ul class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="https://discord.gg/vHgjYW2z"  target="_blank">
+            <img src="pic/bootstrap-icons/discord.svg" class="mx-auto" alt="mydiscord" width="25" height="25">
+            <a></li>
+            <li class="breadcrumb-item"><a href="https://twitter.com/nntaleb" target="_blank">
+            <img src="pic/bootstrap-icons/twitter.svg" class="mx-auto" alt="mytwitter" width="25" height="25">
+            <a></li>
+            <li class="breadcrumb-item"><a href="https://github.com/freetoliv" target="_blank">
+            <img src="pic/bootstrap-icons/github.svg" class="mx-auto" alt="mygithub" width="25" height="25">
+            <a></li>
+            <li class="breadcrumb-item"><a href="#" class="link-info" target="_blank">
+            <img src="pic/bootstrap-icons/wechat.svg" class="mx-auto"  alt="mywechat" width="25" height="25">
+            <a></li>
+            </ul>
+    </div>
+    
+</body>
+<footer class="text-center" style="font-size:10px">Realsed under the <strong>MIT License</strong>
+             Copyright <img src="pic/bootstrap-icons/c-circle.svg" alt="c"> 1999-2099 LuShi
+</footer>
+</html>
