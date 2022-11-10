@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="mystyle.css" rel="stylesheet">
         <script src="js/bootstrap.bundle.min.js"></script>
     </head>
 
@@ -137,7 +138,7 @@
             </div>
         </div>
     </div>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success rounded">
             <div class="container-fluid">
                 <a class="navbar-brand" href="javascript:void(0)">
                     <img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill">
@@ -155,74 +156,26 @@
 
         
 
-        <div class="list-group" id="headbar">
+        <div class="list-group rounded">
+            <div id="headbar">
             
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#home">Mathematics</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Philosophy</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Economy</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu3">Business</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu4">Computers</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu5">History</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu6">Medical</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu7">Politics</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu8">Literature</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu9">More</a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane container active" id="home">
-                <h3>Mathematics</h3>
+                <ul class="nav nav-tabs" role="tablist" v-if="bookcate.length">
+                    <li class="nav-item" v-for="item of bookcate">
+                        <a class="nav-link" data-bs-toggle="tab" href="#item.id">{{item.name}}</a>
+                    </li>
+                </ul>
+            
+                <div class="tab-content">
+                    
+                        <div class="tab-pane container active"  v-for="item of bookcate" id="item.id">
+                            <h3></h3>
+                        </div>
+                    
+                    
+                </div>
             </div>
-            <div class="tab-pane container fade" id="menu1">
-                <h3>Philosophy</h3>
-            </div>
-            <div class="tab-pane container fade" id="menu2">
-                <h3>Economy</h3>
-            </div>
-            <div class="tab-pane container fade" id="menu3">
-                <h3>Business</h3>
-            </div>
-            <div class="tab-pane container fade" id="menu4">
-                <h3>Computer</h3>
-            </div>
-            <div class="tab-pane container fade" id="menu5">
-                <h3>History</h3>
-            </div>
-            <div class="tab-pane container fade" id="menu6">
-                <h3>Medical</h3>
-            </div>
-            <div class="tab-pane container fade" id="menu7">
-                <h3>Politics</h3>
-            </div>
-            <div class="tab-pane container fade" id="menu8">
-                <h3>Literature</h3>
-            </div>
-            <div class="tab-pane container fade" id="menu9">
-                <h3>More</h3>
-            </div>
-        </div>
 
-        <div id="slidepic" class="carousel slide" data-bs-ride="carousel">
+        <div id="slidepic" class="carousel slide cardconan my-3 rounded" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#slidepic" data-bs-slide-to="0" class="active"></button>
@@ -230,7 +183,7 @@
                 <button type="button" data-bs-target="#slidepic" data-bs-slide-to="2"></button>
              </div>
 
-             <div class="carousel-inner">
+             <div class="carousel-inner rounded">
                 <div class="carousel-item active">
                     <img src="pic/first.jpg" alt="firstslide" style="height:350px;width:100%" class="d-block w-100">
                 </div>
@@ -248,18 +201,18 @@
              <button class="carousel-control-next" type="button" data-bs-target="#slidepic" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
              </button>
-        </div>
+        </div><br/>
 
-        <div class="card" style="width:90px">
+        <div class="card cardconan my-3" style="width:90px">
             <img class="card-img-top" src="pic/conan.jpg" alt="myicon" style="width:100%">
             
             <a href="#" class="btn btn-sm d-flex justify-content-between align-items-right">
                 Conan<span class="badge bg-danger rounded-pill">more</span>
             </a>
         </div>
-
-        <div class="pt-5 my-3 text-bg-success rounded">
-            <h1 class="display-1 text-center"><strong></strong>10 Nastaa Book Recommendations!</strong><small>You Can't Miss</small></h1>
+    
+        <div class="pt-3 my-3 text-bg-success rounded cardconan" id="pagetitle">
+            <h1 class="display-1 text-center" :class="{red: isRed}" @click="toggleRed" ><strong></strong>10 Nastaa Book Recommendations!</strong><small>You Can't Miss</small></h1>
             
                 <blockquote class="blockquote">
                     <p class="lead text-break">“But life is very short and anxious for those who forget the past, neglect the present, and fear the future.” </p>
@@ -270,10 +223,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                     <strong>WELLCOM TO THIS SITE!</strong>You could close this alert.
                 </div>
-        </div>
+    </div>
         
-        <div class="row">
-            <div class="col-sm-3 p-3 text-bg-light rounded">
+        <div class="row cardconan my-3 rounded mx-auto">
+            <div class="col-sm-3  text-bg-light rounded">
                 <h1>BOOK</h1>
                 <ul class="list-unstyled">
                     <li>
@@ -285,7 +238,10 @@
                         <ul class="list-unstyled">
                             <li>
                                 Jerry A.Fodor<br/>
-                                <button type="button" class="btn btn-outline-success btn-sm">like</button>
+                                <div id="app">
+                                <button type="button" @click="increment" class="btn btn-outline-success btn-sm">
+                                    <img src="pic/bootstrap-icons/hand-thumbs-up.svg" alt="handup">{{count}}</button>
+                                </div>
                             </li>
                             <li>
                                 Recommendation Index:
@@ -297,7 +253,7 @@
                     <li></li>
                 </ul>
             </div>
-            <div class="col-sm-9 p-3 text-bg-success rounded">
+            <div class="col-sm-9 text-bg-success rounded">
                 <h1>Intruduction</h1>
                 <ul class="list-unstyled">
                     <li>
@@ -315,7 +271,7 @@
             </div>
             </div>
         </div>
-        <div class="table-responsive-sm container">
+        <div class="table-responsive-sm container cardconan my-3 rounded">
             <table class="table table-hover table-striped">
                 <thead class="table-secondary">
                     <tr>
@@ -331,16 +287,10 @@
                 </tbody>
             </table>
         </div>
-        <ul class="pagination pagination-sm justify-content-center" style="margin:20px 0">
-            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link active">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">6</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        <ul class="pagination pagination-sm justify-content-center" style="margin:20px 0" id="pagenumber">
+            <li class="page-item"><a class="page-link" href="#" style="float: left" v-for="item of pagenum">{{item}}</a></li>  
         </ul>
+        
         <svg class="bi" width="32" height="32" fill="currentColor">
             <use xlink:href="pic/bootstrap-icons/heart-fill.svg"/>
           </svg>
@@ -367,8 +317,69 @@
             </ul>
     </div>
     
+
+    <script type="module">
+        import {createApp} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+        
+        createApp({
+            data() {
+                return {
+                    count: 0
+                }
+            },
+
+        methods: {
+            increment() {
+                this.count--
+            }
+        },
+
+        mounted() {
+            console.log(this.count)
+            this.increment()
+            this.count = 338949
+        },     
+     }).mount('#app')
+    
+    createApp({
+        data() {
+            return {
+                isRed: false,
+                color: 'white',
+            }
+        },
+
+        methods: {
+            toggleRed() {
+                this.isRed = !this.isRed
+            },
+            toggleColor() {
+                this.color = this.color === 'white'? 'red' : 'white' 
+            }
+        }
+    }).mount('#pagetitle')
+
+    createApp({
+        data() {
+            return {
+                bookcate: [
+                    { id: 1, name:'Mathematic'}, {id: 2, name: 'History'}, {id: 3, name: 'Economy'} ,  {id: 4, name:'Philosophy'}, {id: 5, name: 'Bussiness'},  {id: 6, name: 'Computer'}, {id: 7, name: 'Medical'}, {id: 8, name: 'Medical'}, {id: 9, name: 'Politics'}, {id: 10, name: 'Literature'}, {id: 11, name: 'More'}
+                ]
+            }
+        }
+    }).mount('#headbar')
+
+    createApp({
+        data() {
+            return {
+                pagenum: ['Previous', 1, 2, 3, 4, 5, 6, 7, 8, 9, 'Next']
+            }
+        }
+    }).mount('#pagenumber')
+ </script>      
+    
 </body>
-<footer class="text-center" style="font-size:10px">Realsed under the <strong>MIT License</strong>
-             Copyright <img src="pic/bootstrap-icons/c-circle.svg" alt="c"> 1999-2099 LuShi
+<footer class="text-center" style="font-size:10px">Released under the <strong>MIT License</strong><br/>
+             Copyright <img src="pic/bootstrap-icons/c-circle.svg" style="width:8px;height:8px" alt="c"> 1999-2099 RuShi
 </footer>
 </html>
