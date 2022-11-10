@@ -88,8 +88,8 @@
         </div>
         <div class="offcanvas-body">
             <div class="list-group">
-                <button  class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead">
-                    Computer<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+                <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead">
+                Computer<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
                 </button>
                 <div class="collapse" id="demohead">
                     <div class="list-group" id="category1">
@@ -203,6 +203,7 @@
             </div>
         </div>
     </div>
+    <div style="margin-top:0px">
         <nav class="navbar navbar-expand-sm navbar-dark bg-success rounded">
             <div class="container-fluid">
                 <a class="navbar-brand" href="javascript:void(0)">
@@ -223,7 +224,7 @@
                 </div>
             </div>
         </nav>
-
+    </div>
         
 
         <div class="list-group rounded">
@@ -231,7 +232,7 @@
             
                 <ul class="nav nav-tabs" role="tablist" v-if="bookcate.length">
                     <li class="nav-item" v-for="item of bookcate">
-                        <a class="nav-link" data-bs-toggle="tab" href="#item.id">{{item.name}}</a>
+                        <a class="nav-link" data-bs-toggle="tab" style="font-size:13px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" href="#item.id">{{item.name}}</a>
                     </li>
                 </ul>
             
