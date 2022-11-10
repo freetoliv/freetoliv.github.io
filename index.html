@@ -12,9 +12,74 @@
 
 <body>
     <div class="container">
-        <a type="button" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-            <img src="pic/bootstrap-icons/three-dots.svg" alt="menuhead">
-        </a>
+        <div>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-grey rounded">
+                <div class="container-fluid">
+                    <a type="button" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <img src="pic/bootstrap-icons/three-dots.svg" alt="menuhead">
+                    </a>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                        </ul> 
+                        <ul class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item px-1"><a href="https://appleid.apple.com/sign-in"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apple" target="_blank">
+                            <img src="pic/bootstrap-icons/apple.svg" class="mx-auto" alt="myappleid" width="16" height="16">
+                            <a></li>
+                            <li class="breadcrumb-item px-1"><a href="https://www.google.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google">
+                            <img src="pic/bootstrap-icons/google.svg" class="mx-auto" alt="mygoogle" width="15" height="15">
+                            <a></li>
+                            <li class="breadcrumb-item px-1"><a href="https://instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram">
+                            <img src="pic/bootstrap-icons/instagram.svg" class="mx-auto" alt="myinstagram" width="15" height="15">
+                            <a></li>
+                            <li class="breadcrumb-item px-1"><a href="#" class="link-info" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Share to friends">
+                            <img src="pic/bootstrap-icons/share.svg" class="mx-auto"  alt="myshare" width="15" height="15">
+                            <a></li>
+                            <a href="#signin" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in">
+                                <img src="pic/bootstrap-icons/person-circle.svg" alt="signin">
+                            </a></ul>
+                        <div class="modal" id="signin">
+                            <div class="modal-dialog modal-fullscreen-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title mx-auto"><strong>Welcome to RSbook!</strong></h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="was-validated">
+                                            <div class="mb-3 mt-3 form-floating">
+                                                <label for="email" class="form-label" id="enter">Enter your email:</label>
+                                                <input type="email" class="form-control" id="email" placeholder="email" name="email" required>
+                                                <div class="valid-feedback">
+                                                    Input valid<img src="pic/bootstrap-icons/check2-circle.svg"></div>
+                                                <div class="invalid-feedback">Please input right form<img src="pic/bootstrap-icons/x-octagon.svg"> </div>
+                                            </div>
+                                            <div class="mb-3 form-floating">
+                                                <label for="pwd" class="form-label" id="enter">Enter your password:</label>
+                                                <input type="password" class="form-control" id="pwd" placeholder="password" name="pwd" required>
+                                                <div class="valid-feedback">
+                                                    Input valid<img src="pic/bootstrap-icons/check2-circle.svg"></div>
+                                                <div class="invalid-feedback">Please input right form<img src="pic/bootstrap-icons/x-octagon.svg"> </div>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                                                <label class="form-check-label" for="mycheck">I agree on the terms and conditions</label>
+                                                <div class="valid-feedback">
+                                                    valid<img src="pic/bootstrap-icons/check2-circle.svg"></div>
+                                                <div class="invalid-feedback">Check this checkbox to continue<img src="pic/bootstrap-icons/x-octagon.svg"> </div>
+                                            </div>
+                                            <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between unborded"><button type="submit" class="btn btn-light">Sign in</button>
+                                            <a  type="button">Sign up</button></li></ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
     
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
@@ -146,9 +211,14 @@
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
                     </ul> 
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="text" placeholder="Search">
-                        <button class="btn btn-body" type="button"><img src="pic/bootstrap-icons/search.svg" alt="search"> </button>
+                    <form class="d-flex rounded">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Search">
+                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/qr-code-scan.svg"></span>
+                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/mic.svg"></span>
+                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/camera-fill.svg"></span>
+                            <span class="input-group-text bg-light"> <img src="pic/bootstrap-icons/search.svg" alt="search"></span>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -203,12 +273,24 @@
              </button>
         </div><br/>
 
-        <div class="card cardconan my-3" style="width:90px">
+        <div class="card shadow-lg my-2 rounded mx-auto" style="width:350px;font-size:12px" >
+            <div class="card-header justify-content-between" style="line-height:1px;margin-bottom:-15px;margin-top: 0px;">
+                <p><img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill"> <strong>nassim taleb</strong>
+                <a href="#" class="btn btn-primary right" >View profile</a></p>
+            </div>
             <img class="card-img-top" src="pic/conan.jpg" alt="myicon" style="width:100%">
-            
+            <div class="card-body" style="line-height:1px">
+            <a href="#" >View more about this book</a><hr style="margin-top:10px;margin-bottom:0px"/>
             <a href="#" class="btn btn-sm d-flex justify-content-between align-items-right">
-                Conan<span class="badge bg-danger rounded-pill">more</span>
+                <img src="pic/bootstrap-icons/heart.svg"><img src="pic/bootstrap-icons/chat.svg"><img src="pic/bootstrap-icons/upload.svg">
+                <span class="badge rounded-pill justify-content-left"><img src="pic/bootstrap-icons/bookmark.svg"> </span>
             </a>
+            <strong>7,985 likes</strong><hr style="margin-top:10px;margin-bottom:0px" />
+            <div class="input-group" >
+            <input type="text" class="form-control form-control-sm" placeholder="Add a comment...">
+            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/camera.svg"> </span>
+            </div>
+            </div>
         </div>
     
         <div class="pt-3 my-3 text-bg-success rounded cardconan" id="pagetitle">
@@ -225,7 +307,7 @@
                 </div>
     </div>
         
-        <div class="row cardconan my-3 rounded mx-auto">
+        <div class="row shadow-lg my-3 rounded mx-auto">
             <div class="col-sm-3  text-bg-light rounded">
                 <h1>BOOK</h1>
                 <ul class="list-unstyled">
@@ -250,7 +332,6 @@
                                 </div>
                             </li>
                         </ul>
-                    <li></li>
                 </ul>
             </div>
             <div class="col-sm-9 text-bg-success rounded">
@@ -376,6 +457,11 @@
             }
         }
     }).mount('#pagenumber')
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltiplist =tooltipTriggerList.map(function (tooltipTriggerE1){
+        return new bootstrap.Tooltip(tooltipTriggerE1)
+    })
  </script>      
     
 </body>

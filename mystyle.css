@@ -5,4 +5,45 @@
 div.cardconan {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-  
+
+input[type=text] {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid black;
+  background-color: lightyellow;
+}
+
+button {
+  border: none;
+}
+
+span.input-group-text {
+  border: none;
+}
+
+#enter {
+  opacity: 0.3;
+}
+
+.right {
+  float: right
+}
+
+.left {
+  flost: left
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: hotpink;
+}
+
