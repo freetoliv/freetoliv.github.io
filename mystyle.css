@@ -51,7 +51,7 @@ section {
   padding:42px 32px;
 }
 
-#mysitehead {
+div#mysitehead {
   padding:96px 32px;text-align:center
 }
 
@@ -62,4 +62,6 @@ section {
 html:not(.dark) .accent,.dark .tagline {
 background:-webkit-linear-gradient(315deg,#42d392 25%,#647eff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent
 }
+
+
 
