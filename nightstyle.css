@@ -1,0 +1,26 @@
+:root {
+  
+  --navigation-background-color: #fbfcf8;
+  --link-text-color: black;
+ 
+  --nav-display: flex;
+  
+}
+
+[data-theme="dark"] {
+  
+  --navigation-background-color: hsl(0, 0%, 15%);
+  --link-text-color: white;
+  
+}
+
+
+.navigation {
+  background-color: var(--navigation-background-color);
+  color: var(--link-text-color);
+  
+}
+
+
+
+

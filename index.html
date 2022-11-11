@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="mystyle.css" rel="stylesheet">
+        <link href="nightstyle.css" rel="stylesheet">
         <script src="js/bootstrap.bundle.min.js"></script>
         <style>
     
@@ -23,22 +24,47 @@
           #tablebook {display: none}
           #headicons {display: none;}
         }
-        #headicons {background-color: blanchedalmond;}
          </style>
     </head>
 
-<body>
+<body class="navigation">
+    <script>
+        // Color mode changer script
+        const SetColorMode = () => {
+          if(localStorage.getItem("colorMode") === null) {
+            localStorage.setItem("colorMode", "light");
+          }
+  
+          if(localStorage.getItem("colorMode") === "light") {
+            localStorage.setItem("colorMode", "dark");
+          } else if (localStorage.getItem("colorMode") === "dark") {
+            localStorage.setItem("colorMode", "light");
+          }
+  
+          document.documentElement.setAttribute("data-theme", localStorage.getItem("colorMode"));
+        }
+  
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("colorMode"));
+  
+      </script>
+      
+  
+    
     <div class="container">
+        
         <div>
             <nav class="navbar navbar-expand-sm navbar-dark bg-grey rounded">
                 <div class="container-fluid">
-                    <a type="button" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <a type="button" ata-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                         <img src="pic/bootstrap-icons/three-dots.svg" alt="menuhead">
                     </a>
                     <div class="collapse navbar-collapse" id="mynavbar">
                         <ul class="navbar-nav me-auto">
                         </ul> 
                         <ul class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item px-5 form-check form-switch">
+                                <input onclick="SetColorMode()" class="form-check-input" id="myswitch" type="checkbox" name="darkmode" style="background-color:rgb(96, 95, 95)" value="false" checked aria-disabled="true">
+                                <label class="form-check-label" for="myswitch">Night Mode</label> </li>
                             <li class="breadcrumb-item px-1"><a href="https://appleid.apple.com/sign-in"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apple" target="_blank">
                             <img src="pic/bootstrap-icons/apple.svg" class="mx-auto" alt="myappleid" width="16" height="16">
                             <a></li>
@@ -809,7 +835,7 @@
     createApp({
         data() {
             return {
-                pagenum: ['Previous', 1, 2, 3, 4, 5, 6, 7, 8, 9, 'Next']
+                pagenum: ['Previous', 1, 2, 3, 4, 5, 6, 7, 8, 9, 'Next'],
             }
         }
     }).mount('#pagenumber')
@@ -818,7 +844,8 @@
     var tooltiplist =tooltipTriggerList.map(function (tooltipTriggerE1){
         return new bootstrap.Tooltip(tooltipTriggerE1)
     })
- </script>      
+   </script>
+    
  
     
 </body>

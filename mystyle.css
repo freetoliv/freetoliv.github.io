@@ -1,3 +1,17 @@
+:root {
+            --navgation-background-color: #F5E8C7;
+            --nav-display: flex;
+        }
+
+[data-theme="dark"] {
+            --navigation-background-color: hsl(0, 0%, 15%);
+        }
+
+.navigation {
+            background-color: var(--navgation-background-color);
+           
+        }
+
 .red {
     color: red
 }
