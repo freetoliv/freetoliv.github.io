@@ -13,6 +13,7 @@
         @media screen and (min-width: 768px) {
           #cardbook  {display: none}
           #mysitehead {display: none}
+          #headmoblie {display: none;}
         }
 
         @media screen and (max-width: 768px) {
@@ -20,8 +21,9 @@
           #bookintro {display: none }
           #slidepic  {display: none}
           #tablebook {display: none}
-          #headicons {background-color: blanchedalmond;}
+          #headicons {display: none;}
         }
+        #headicons {background-color: blanchedalmond;}
          </style>
     </head>
 
@@ -218,8 +220,32 @@
             </div>
         </div>
     </div>
-    <div style="margin-top:0px">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-success rounded" id="headicons">
+
+    <div style="margin-top:0px" id="headmoblie">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-light rounded" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill">
+                </a>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                    </ul> 
+                    <form class="d-flex rounded">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Search">
+                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/qr-code-scan.svg"></span>
+                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/mic.svg"></span>
+                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/camera-fill.svg"></span>
+                            <span class="input-group-text bg-light"> <img src="pic/bootstrap-icons/search.svg" alt="search"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div style="margin-top:0px" id="headicons">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success rounded" >
             <div class="container-fluid">
                 <a class="navbar-brand" href="javascript:void(0)">
                     <img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill">
