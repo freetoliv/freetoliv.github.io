@@ -24,6 +24,7 @@
           #tablebook {display: none}
           #headicons {display: none;}
         }
+
          </style>
     </head>
 
@@ -53,28 +54,26 @@
     <div class="container">
         
         <div>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-grey rounded">
+            <ul class="nav bg-grey rounded">
                 <div class="container-fluid">
-                    <a type="button" ata-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                        <img src="pic/bootstrap-icons/three-dots.svg" alt="menuhead">
-                    </a>
-                    <div class="collapse navbar-collapse" id="mynavbar">
-                        <ul class="navbar-nav me-auto">
-                        </ul> 
-                        <ul class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item px-5 form-check form-switch">
+                    <div id="mynavbar" >
+                        <a  style="margin:0px" type="button" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <img src="pic/bootstrap-icons/three-dots.svg" alt="menuhead">
+                        </a>
+                        <ul class="nav nav-tabs justify-content-end">
+                            <li class="nav-item px-2 form-check form-switch">
                                 <input onclick="SetColorMode()" class="form-check-input" id="myswitch" type="checkbox" name="darkmode" style="background-color:rgb(96, 95, 95)" value="false" checked aria-disabled="true">
                                 <label class="form-check-label" for="myswitch">Night Mode</label> </li>
-                            <li class="breadcrumb-item px-1"><a href="https://appleid.apple.com/sign-in"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apple" target="_blank">
+                            <li class="nav-item px-1"><a href="https://appleid.apple.com/sign-in"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apple" target="_blank">
                             <img src="pic/bootstrap-icons/apple.svg" class="mx-auto" alt="myappleid" width="16" height="16">
                             <a></li>
-                            <li class="breadcrumb-item px-1"><a href="https://www.google.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google">
+                            <li class="nav-item px-1"><a href="https://www.google.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google">
                             <img src="pic/bootstrap-icons/google.svg" class="mx-auto" alt="mygoogle" width="15" height="15">
                             <a></li>
-                            <li class="breadcrumb-item px-1"><a href="https://instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram">
+                            <li class="nav-item px-1"><a href="https://instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram">
                             <img src="pic/bootstrap-icons/instagram.svg" class="mx-auto" alt="myinstagram" width="15" height="15">
                             <a></li>
-                            <li class="breadcrumb-item px-1"><a href="#" class="link-info" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Share to friends">
+                            <li class="nav-item px-1"><a href="#" class="link-info" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Share to friends">
                             <img src="pic/bootstrap-icons/share.svg" class="mx-auto"  alt="myshare" width="15" height="15">
                             <a></li>
                             <a href="#signin" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in">
