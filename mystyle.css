@@ -47,12 +47,12 @@ a:hover {
   color: hotpink;
 }
 
-section { 
-  padding:42px 32px;
+h1 { 
+  padding:42px 0;
 }
 
 div#mysitehead {
-  padding:96px 32px;text-align:center
+  padding:96px 0;
 }
 
 .tagline { 
