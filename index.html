@@ -313,10 +313,17 @@
             </div>
 
             <div id="mysitehead">
-                
-                    <h1 class="tagline text-center">
-                    The Book<br><span class="accent">RuShi</span><br>Recommend
-                    </h1>
+                <h1 class="tagline text-center">
+                The Book<br><span class="accent">RuShi</span><br>Recommend
+                </h1>
+                <audio src="music/ussewa.mp3" playsong></audio>
+                <div class="btn-group btngroupfell rounded">
+                    <button class="play btnfell"><img src="pic/bootstrap-icons/play-circle.svg"> うっせぇわ</button> 
+                    <button class="pause btnfell"><img src="pic/bootstrap-icons/pause-circle.svg"></button>
+                </div>  
+            </div>
+
+            <div>
                 
             </div>
 
@@ -843,6 +850,13 @@
     var tooltiplist =tooltipTriggerList.map(function (tooltipTriggerE1){
         return new bootstrap.Tooltip(tooltipTriggerE1)
     })
+
+    document.querySelector(".play").onclick = event => {
+        document.querySelector("[playsong]").play()
+    }
+    document.querySelector(".pause").onclick = event => {
+        document.querySelector("[playsong]").pause()
+    }
    </script>
     
  
