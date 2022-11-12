@@ -68,11 +68,11 @@ h1 {
 div#cardbook {}
   
 div#mysitehead {
-  padding-bottom:96px;
-  margin-top:-50px;
+  padding-bottom:0px;
+  margin-top:-40px;
 }
 
-.btngroupfell{margin-left:150px}
+.btngroupfell{margin-left:130px}
 .btnfell {
   font-size:16px;font-weight:500;;color:grey;background-color:#E6E6FA}
 
@@ -90,11 +90,25 @@ background:-webkit-linear-gradient(315deg,#42d392 25%,#647eff);background-clip:t
     height: 350px;
     margin-left:auto;
     margin-right:auto;
-    margin-top:-60px;
+    margin-top:0px;
     background-color: rgb(247, 241, 241);
            div#bookreading{
     margin:auto;}
   }
+  a#website {
+    
+    width: 80px;
+    height: 80px;
+    padding-left: 13px;
+    padding-top:13px;
+    background-color: rgb(247, 241, 241);
+    border-radius: 20px
+    
+   
+}
+    
+
+
     .buttonstyle{
   display: inline-flex;
     background-image: linear-gradient(147deg, #f98c48 0%, #f2e972 74%);
