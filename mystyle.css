@@ -65,7 +65,7 @@ h1 {
   padding:42px 0;
 }
 
-div#cardbook {padding-top:-50px}
+div#cardbook {}
   
 div#mysitehead {
   padding-bottom:96px;
@@ -88,7 +88,7 @@ background:-webkit-linear-gradient(315deg,#42d392 25%,#647eff);background-clip:t
     display: inline-block;
     width: 300px;
     height: 350px;
-    margin-left: 48px;
+    margin-left: 38px;
     margin-top:-60px;
     background-color: rgb(247, 241, 241);
   }
