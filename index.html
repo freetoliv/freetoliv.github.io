@@ -15,6 +15,7 @@
           #cardbook  {display: none}
           #mysitehead {display: none}
           #headmoblie {display: none;}
+          #boxreading {display: none;}
         }
 
         @media screen and (max-width: 768px) {
@@ -246,27 +247,20 @@
         </div>
     </div>
 
-    <div style="margin-top:0px" id="headmoblie">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-light rounded" >
-            <div class="container-fluid">
-                <a class="navbar-brand" href="javascript:void(0)">
-                    <img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill">
-                </a>
-                <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav me-auto">
-                    </ul> 
-                    <form class="d-flex rounded">
-                        <div class="input-group">
-                            <input class="form-control" type="text" placeholder="Search">
-                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/qr-code-scan.svg"></span>
-                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/mic.svg"></span>
-                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/camera-fill.svg"></span>
-                            <span class="input-group-text bg-light"> <img src="pic/bootstrap-icons/search.svg" alt="search"></span>
-                        </div>
-                    </form>
-                </div>
+    <div style="margin-top:-70px" id="headmoblie">
+        <div class="container-fluid">
+            <div>
+                
+            </div>    
+            <div class="input-group" style="width:380px;">
+                <span style="margin-left:0"><img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill"></span>
+                <input class="form-control" type="text"  placeholder="Search">
+                <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/qr-code-scan.svg"></span>
+                <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/mic.svg"></span>
+                <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/camera-fill.svg"></span>
+                <span class="input-group-text bg-light"> <img src="pic/bootstrap-icons/search.svg" alt="search"></span>
             </div>
-        </nav>
+        </div>   
     </div>
 
     <div style="margin-top:0px" id="headicons">
@@ -323,8 +317,192 @@
                 </div>  
             </div>
 
-            <div>
-                
+            <div id="boxreading">
+                <div class="card rounded-5" id="box">
+                    <img class="card-img-top" src="pic/surgeons.png" alt="nassim taleb">
+                    <div class="card-body">
+                        <h4 class="card-title"style="font-size:13px" ><strong>Surgeons Should Not Look Like Surgeons</strong></h4>
+                        <p  class="card-text" style="font-size:10px" >Literature doesn’t look like literature –Business plans are for suckers — Donaldo Hiring practitioners –the glory of bureaucracy–teach a professor how to deadlift...</p></div>
+                    
+                        <a type="button" data-bs-toggle="modal" href="#myreadmodal" class="btn btn-light btn-sm buttonstyle">see more</a>
+    
+                    
+                </div>
+                <div class="modal fade" id="myreadmodal">
+                    <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <a href="javascript:void(0)"  style="text-decoration:none;font-size:12px;font-weight:900;color:black">
+                                                <img src="pic/nassim.jpg" alt="myicoon" style="width:40px;" class="rounded-pill">Nassim Taleb
+                                    </a>    
+                                    <div class="float-end" >
+                                        <img src="pic/bootstrap-icons/twitter.svg">
+                                        <img src="pic/bootstrap-icons/facebook.svg">
+                                        <img src="pic/bootstrap-icons/linkedin.svg">
+                                        <img src="pic/bootstrap-icons/link-45deg.svg" alt="search">
+                                        <img src="pic/bootstrap-icons/bookmark.svg" alt="search">
+                                        <img class="" src="pic/bootstrap-icons/three-dots.svg">
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body" >
+                                <h4 class="modal-title" style="font-family: Spectral, serif;font-size: 23px;">Surgeons Should Not Look Like Surgeons</h4><br>
+                                <p id="readtxt" style="font-family: Rubik, sans-serif;
+                                font-size: 14px;">
+                                    Looking the Part<br>
+    Say you had the choice between two surgeons of similar rank in the same department in some hospital. The first is highly refined in appearance; he wears silver-rimmed glasses, has a thin built, delicate hands, a measured speech, and elegant gestures. His hair is silver and well combed. He is the person you would put in a movie if you needed to impersonate a surgeon. His office prominently boasts an Ivy League diploma, both for his undergraduate and medical schools.<br>
+    
+    The second one looks like a butcher; he is overweight, with large hands, uncouth speech and an unkempt appearance. His shirt is dangling from the back. No known tailor in the East Coast of the U.S. is capable of making his shirt button at the neck. He speaks unapologetically with a strong New Yawk accent, as if he wasn’t aware of it. He even has a gold tooth showing when he opens his mouth. The absence of diploma on the wall hints at the lack of pride in his education: he perhaps went to some local college. In a movie, you would expect him to impersonate a retired bodyguard for a junior congressman, or a third-generation cook in a New Jersey cafeteria.<br>
+    
+    Now if I had to pick, I would overcome my suckerproneness and take the butcher any minute. Even more: I would seek the butcher as a third option if my choice was between two doctors who looked like doctors. Why? Simply the one who doesn’t look the part, conditional of having made a (sort of) successful career in his profession, had to have much to overcome in terms of perception. And if we are lucky enough to have people who do not look the part, it is thanks to the presence of some skin in the game, the contact with reality that filters out incompetence, as reality is blind to looks.<br>
+    
+    When the results come from dealing directly with reality rather than through the agency of commentators, image matters less, even if it correlates to skills. But image matters quite a bit when there is hierarchy and standardized “job evaluation”. Consider the chief executive officers of corporations: they not just look the part, but they even look the same. And, worse, when you listen to them talk, they will sound the same, down to the same vocabulary and metaphors. But that’s their jobs: as I keep reminding the reader, counter to the common belief, executives are different from entrepreneurs and are supposed to look like actors.<br>
+    
+    Now there may be some correlation between looks and skills; but conditional on having had some success in spite of not looking the part is potent, even crucial, information.<br>
+    
+    So it becomes no wonder that the job of chief executive of the country, that is, the president, was once filled by a former actor, Ronald Reagan. Actually, the best actor is the one nobody realizes is an actor: a closer look at the record and the activity shows that Barack Obama was even more of an actor: a fancy Ivy-League education combined with a liberal reputation is compelling as an image builder. (In fact much as President Trump has going for him is that he doesn’t act as a president).<br>
+    
+    Much has been written about the millionaire next door: the person who is actually rich, on balance, doesn’t look like the person you would expect to be rich, and vice versa. About every private banker is taught to overcome the image as it doesn’t match the bottom line and avoid chasing people who drive Ferraris at country clubs. I just recently experienced its manifestation: as I am writing these lines: a neighbor in my ancestral village and (like almost everyone there, a remote relative), who led a modest but comfortable life, ate food he grew by himself, drank his own pastis (arak), that sort of thing, left an estate of a hundred million dollars, a hundred times what one would have expected him to leave.<br>
+    
+    So consider next time you randomly pick a novel, to avoid the one with the author photo representing a pensive man with an ascot standing behind wall-to-wall bookshelves. Or the well-spoken person who gives what is known as a TED talk.<br>
+    
+    Next, we will get deeper into the following:<br>
+    
+    In any type of activity or business divorced from the direct filter of skin in the game, the great majority of people know the jargon, play the part, are intimate with the cosmetic details, but are clueless about the subject.
+    
+    The Green Lumber Fallacy
+    The idea is Lindy compatible. Don’t think that beautiful apples are tasteful, goes the Latin saying: Non teneas aurum totum quod splendet ut aurum/nec pulchrum pomum quodlibet esse bonum. To the common “all that glitters is not gold”, the proverb adds the more subtle one that not all apples taste good –something it has taken consumers half a century to figure out, even then, as consumers have been continuously fooled by the aesthetics of produce.<br>
+    
+    An expert rule is in my business never hire a well-dressed trader. But it goes beyond:<br>
+    
+    Hire the successful trader, conditional on a satisfactory track record, whose details you can understand the least.<br>
+    
+    Not the most: the least. Why so?<br>
+    
+    This point I’ve introduced in Antifragile under the name green lumber fallacy. A fellow made in fortune in green lumber without knowing what appears to be essential details about the product he traded –he wasn’t aware that green lumber stood for freshly cut wood, not lumber that was painted green. Meanwhile, by contrast, the person who related the story went bankrupt while knowing every intimate detail about the green lumber, which includes the physical, economic, and other aspects of the commodity. The fallacy is that what one may need to know in the real world does not necessarily match what one can perceive through intellect: it doesn’t mean that details are not relevant, only that those we tend (IYI-style) to believe are important constitute a distraction away from more central attributes to the price mechanism. I put the green lumber fallacy as part of the Soviet-Harvard delusion, though it appears that the Soviet were much more bottom up than the Harvard approach.<br>
+    
+    In any activity, hidden details are only revealed via Lindy-style experience.<br>
+    
+    Another aspect:<br>
+    
+    What can be phrased and expressed in a clear narrative that convinces suckers will be a sucker trap.<br>
+    
+    My friend Terry B. who taught an investment class invited two speakers. One looked the part of the investment manager, down to a T: tailored clothes, expensive watch, shiny shoes, and clarity of exposition. He also talked big, projecting the type of confidence you would desire in an executive. The second looked closer to our butcher-surgeon and was totally incomprehensible; he even gave the impression that he was confused. Now when Terry asked the students who, of the two they believed was more successful, they didn’t even get close. The first, not unexpectedly, was in the equivalent of the soup kitchen for that business; the second was at least a centimillionaire.<br>
+    
+    The late Jimmy Powers, a die-hard New York Irishman with whom I worked in an investment bank early in my trading career, was successful in spite of being a college dropout, with the background of a minor Brooklyn street-gangster. He would discuss our trading activities in meetings with such sentences as: “we did this and then did that, badaboom, badabing, and then it was all groovy”, to an audience of extremely befuddled executives who didn’t mind not understanding what he was talking about, so long as our department were profitable. Remarkably, after a while, I got to effortlessly understand what Jimmy meant. I also learned, in my early twenties, that the people you understood the most were necessarily those were the bull***ters.<br>
+    
+    Best Dressed Business Plan<br>
+    Literature should not look like literature. The author Georges Simenon worked as a teenager in journalism as an assistant to the famous female French writer Colette; she taught him to resist the idea of putting imperfect subjunctives and references to zephyrs, rhododendrons, and firmaments in his text –the kind of stuff one does when waxing literary. Simenon took the advice to the extreme: in a style equivalent to that of, say, Graham Greene, his style is stripped to the core, and as a result, the words do not stand in the way of conveying the atmosphere –you feel wetness penetrating your shoes just reading his accounts of Maigret spending endless times in the Parisian rain; it is as if the central character of his novel is the background.<br>
+    
+    Likewise, there prevails the illusion that businesses work by business plans and science by funding. This is strictly not true: a business plan is a useful narrative for those who want to convince a sucker. It works because firms in the entrepreneurship business make most of their money packaging companies and selling them; it is not easy to sell without some strong narrative. But for a real business, something that should survive on its own, rather than a fund-raising scheme, business plans and funding work backwards. At the time of writing, most big recent successes (Microsoft, Apple, Facebook, Google) started organically by people with skin and soul in the game and grew –if they had recourse to funding, it was to allow the managers to cash out rather than the prime source of creation. You don’t create a firm by creating a firm; nor do you do science by doing science.<br>
+    
+    A “Beautiful” Paper<br>
+    
+    How economists should dress<br>
+    Which brings me to social science. I have in many instances quickly jotted down ideas on a piece of paper, along with mathematical proofs, and posted them somewhere, planning to get them published. No fluff or the ideas-free verbose circularity of social science papers. In some fake fields like economics, that is one that is ritualistic and dominated by citation rings, I discovered that everything is in the presentation. So the criticism has never been about the content, but rather the presentation. There is a certain language one needs to learn through a long investment, and papers are just iterations around that language. So I can safely say that almost all papers in economics are substance free or fake, particularly those published in “prestigious” journals.<br>
+    
+    Never hire an academic in the complex domain, unless the function is to partake of the rituals of writing papers or taking exams.<br>
+    
+    Which brings us to the attributes of scientism. For it was not just some presentation that mattered to these idiots. It is unnecessary complication.<br>
+    
+    Mediterranean societies are traditionally ones in which the highest ranking person is the one with skin in the game, the risk taker. Death on the battlefield remained the highest honor. If anything characterizes Greek culture, it is such skin in the game. And if anything characterizes today’s America, it is economic risk taking, thanks to a happy transfer of martial values to business and commerce in Anglo-Saxon society –remarkably, traditional Arabic culture also puts the same emphasis on the honor of economic risk-taking. But history shows that there were –are still are –societies in which the intellectual was at the top. The Hindus held the Brahman to be first in the hierarchy, the Celts had the druids, the Egyptians had their scribes, and the Chinese had for a relatively brief time the scholar. Let me add post-war France. But there is a remarkable similarity to the way these intellectuals held power and separated themselves from the rest: through complex, extremely elaborate rituals, mysteries that stay within the caste, and an overriding focus on the cosmetic.<br>
+    
+    Even beyond, when examining the “normal” warrior-run or doer-run societies, the class of intellectuals within them is all about rituals: without pomp and rituals, the intellectual is just a talker, that is pretty much nothing. Consider the bishop in my parts, the Greek-Orthodox church: it’s a show of dignity. A bishop on rollerblades would not be a bishop. And, as we will see in Chapter x, there is nothing wrong, even something beneficial with the decorative if it remains what it is, decorative –science and business are not to be decorative.<br>
+    
+    II<br>
+    Next we examine the following points<br>
+    
+    Just as the slick fellow in a Ferrari looks richer than the rumpled centimillionaire, scientism looks more scientific than real science.<br>
+    
+    True intellect should not appear to be intellectual<br>
+    
+    The Gordian Knot<br>
+    Never pay for complexity of presentation when all you need is results.<br>
+    
+    
+    Alexander the Megalos was once called to solve the following in the Phrygian city of Gordium (as usual with Greek stories, in modern day Turkey). When he entered Gordium, he found an old wagon, its yoke tied with a multitude of knots, all so tightly entangled that it was impossible to figure out how they were fastened. An oracle had declared that he who would untie the knot would rule all of what was then called “Asia”, that is Asia minor, the Levant, and the Middle East.<br>
+    
+    After wrestling with the knot, the Megalos drew back from the lump of gnarled ropes, then made a proclamation that it didn’t matter for the prophecy how the tangle was to be unraveled. He then drew his sword and, with a single stroke, cut the knot in half.<br>
+    
+    No “successful” academic would ever follow such policy. And no Intellectual Yet Idiot: for instance it took medicine a long time to realize that, when a patient shows up with a headache, it much better to give him aspirin or recommend a good night sleep than do brain surgery, although the latter appears to be more “scientific”.<br>
+    
+    Overintellectualization of Life<br>
+    Gigerenzer and Brighton contrast the approaches of the “rationalistic” school (in brackets as there is little that is rational in these rationalists) and that of the heuristic one, in the following example on how a baseball player catches the ball by Richard Dawkins:<br>
+    
+    Richard Dawkins (…) argues that “He behaves as if he had solved a set of differential equations in predicting the trajectory of the ball. At some subconscious level, something functionally equivalent to the mathematical calculations is going on”.<br>
+    
+    (…) Instead, experiments have shown that players rely on several heuristics. The gaze heuristic is the simplest one and works if the ball is already high up in the air: Fix your gaze on the ball, start running, and adjust your running speed so that the angle of gaze remains constant .<br>
+    
+    This error by the science entertainer Richard Dawkins error generalizes to, simply, overintellectualizing humans in their responses to all manner of natural phenomena, rather than accepting the role of a collection of mental heuristics used for specific purposes. The baseball player has no clue about the exact heuristic, but he goes with it –otherwise he would lose the game to another nonintellectualizing competitor. Likewise religious “beliefs” are simply mental heuristics that solve a collection of problems –without the agent really knowing how –and lead to human activity; for solving the equations of the world in order to make a decision isn’t a skill we humans can aspire to have –it is computationally impossible. What we can rationally do is neutralize some aspects of these heuristics, defang them so to speak.<br>
+    
+    The Business of Intervention<br>
+    Some rules. People who have always operated without skin in the game (or without their skin in the right game) seek the complicated, centralized, and avoid the simple like the pest. Practitioners on the other hand have opposite instincts, looking for the simplest heuristics.<br>
+    
+    People who are bred, selected, and compensated to find complicated solutions do not have an incentive to implement simplified ones<br>
+    
+    And it gets more complicated as the remedy has itself a skin in the game problem<br>
+    
+    This is particularly acute in the meta-problem when the solution is about solving this very problem<br>
+    
+    In other words, Many problems in society come from the interventionism of people who sell complicated solutions because that’s what their position and training invites them to do. There is absolutely no gain for someone in such a position to propose something simple: you are rewarded for perception not results. They pay no price for the side effects that grow nonlinearly with such complications.<br>
+    
+    But also when it comes to solutions that are profitable to technologists.<br>
+    
+    Gold and Rice<br>
+    Now, indeed we know by instinct that brain surgery is not more “scientific” than aspirin, no more than flying the forty or so miles between New York JFK and Newark airports represent “efficiency” although there is more technology involved. But we don’t easily translate into other domains and remain victims of what is called scientism, which is to science what a Ponzi scheme is to an investment, or what an advertisement or propaganda are to a genuine scientific communication. You magnify the cosmetic attributes.<br>
+    
+    Consider the story of the genetically modified Golden Rice. Some firms discovered the sucker problem of people’s ability to fall for (lucrative) science as a savior of mankind. There has been a problem of malnutrition and nutrient deficiency in many developing countries, which my collaborators Yaneer Bar Yam and Joe Norman attribute to a simple and very straightforward transportation issue. Simply, we waste more than a third of our food supply and the gains from simple improvement in the distribution far outweigh those from modification of supply. Simply consider that close to eighty or eighty five percent of the cost of a tomato will be attributed to transportation, storage, waste (from the rotting of unsold inventories), rather than the cost at the farmer level.<br>
+    
+    Now the “techies” saw an angle of intervention. First, you find pictures of starving children and show their pictures to elicit sympathy and prevent further discussion –anyone who argues in the presence of dying children is a heartless a**hole. Second you make it look that any critic of your method is arguing against saving the children. Third, you propose some scientific looking technique that is lucrative to you and, should it cause a catastrophe or blight, you are insulated from the long term effects. Fourth, you enlist the journalists and the useful idiots, people who hate things that appear “unscientific” in their unscientific eyes. Fifth, you create a smear campaign to harm the reputation of researchers who, not having f*** you money, are very vulnerable to the slightest blemish to their reputation.<br>
+    
+    The technique in question consists in genetically modifying rice to have the grains include vitamins.<br>
+    
+    My colleagues and I made an effort to show the following, which is a criticism of the method in general. First, transgenics, that is the type of genetic modifications thus obtained, were not analytically in the same category as the cross breeding of plants and animals that have characterized human activities since husbandry –say potatoes or mandarin oranges. We skipped complexity classes and the effects on the environment were not foreseeable –nobody studied the interactions. We even showed that there was a patent increase in systemic risk. Second, there was no proper risk study and the statistical methods in the papers in support of the argument were flawed. Third, we invoked the principle of simplicity which was called antiscience. Why don’t we give these people rice and vitamins separately? After all we don’t have genetically modified coffee that has milk with it. Fourth we were able to show that GMOs brought a bevy of hidden risk to the environment, in terms of higher use of pesticide which killed the microbiome.<br>
+    
+    The first result was an organized smear campaign Close to 1500 messages were sent to my university, which were tracked to Ketchum the public relation firm that represents Montanto. It was not just ineffectual, but brought more attention to our work, particularly among people who had interest in complexity theory and systemic risk management. Needless to say that people who engage in smear campaign are not often the smartest and toughest kids on the block –did your most intelligent or tough classmates in school dream of become smear-campaigners when they grew up?<br>
+    
+    I realized soon later that, owing to the minority rule (Chapter x), there was no point to continue. GMOs lost simply because a minority of intelligent and intransigent people stood against them.<br>
+    
+    The Compensation<br>
+    Simply, the minute one is judged by others rather than by reality, the mechanism becomes warped as follows. Firms that haven’t gotten bankrupt yet have something called personnel departments, with people trained into a discipline of dealing with other peoples. So there are metrics used and “evaluation forms” to fill.<br>
+    
+    The minute one has evaluation forms distortions occur. Recall that in The Black Swan I had to fill my evaluation form asking “how many percent of days one is profitable”, encouraging traders to make steady money at the expense of hidden risks of Black Swans, consequential losses. Russian Roulette allows you to make money 5 times out of six. This has bankrupted banks as banks lose less than one in 100 quarters, but then they lose more than they ever made. My declared approach was try to make money infrequently. I tore the evaluation form in front of the big boss and they left me alone.<br>
+    
+    Now the mere fact than an evaluation causes you to be judged, not by the end results, but by some intermediary metric that invites you to look sophisticated, bring that distortion.<br>
+    
+    Education as Luxury Good<br>
+    Ivy League Universities are becoming in the eyes of the new Asian upper class the status luxury good. Harvard is like a Vuitton bag and a Cartier Watch. It is a huge drag on the middle class who have been plowing an increased share of their savings into educational institutions, transferring their money to bureaucrats, real estate developers, tenured professors of some discipline that would not otherwise exist (gender studies, comparative literature, or international economics), and other parasites. In the United States, we have a buildup of student loans that automatically transfer to these rent extractors. In a way it is no different from racketeering: One needs a decent university “name” to get ahead in life. But we have evidence that collectively society doesn’t advance with organized education, rather the reverse: the level of (formal) education in a country is the result of wealth.<br>
+    
+    A BS detection Heuristic.<br>
+    The heuristic here would be to use education in reverse: hire, conditional on equal set of skills, the person with the least label-oriented education. It means that the person had to succeed in spite of the credentialization of his competitors and overcome more serious hurdles. In addition, people who didn’t go to Harvard are easier to deal with in real life.<br>
+    
+    You can tell if a discipline is BS if the degree depends severely on the prestige of the school granting it. I remember when I applied to MBA programs being told that anything outside the top 10 or 20 would be a waste of time. On the other hand a degree in mathematics is much less dependent on the school (conditional on being above a certain level, so the heuristic would apply to the difference between top 10 and top 2000 schools).
+    <br>
+    The same applies to research papers. In math and physics, a result posted on arXiv (with a minimum hurdle) is fine. In low quality fields like academic finance (where almost all academics are charlatans and all papers some form of complicated storytelling), the “prestige” of the journal is the sole criterion.<br>
+    
+    Real Gyms Don’t Look Like Gyms<br>
+    This education labeling –which provides a lot of cosmetic things but most certainly misses something essential about antifragility and true learning –is reminiscent of gyms. People are impressed with expensive equipment, fancy, complicated, multicolored, meant to look as if it belonged to space ships. It is made to appear maximally sophisticated and scientific –but remember that what looks scientific is usually scientism not science. As with label universities, you pay quite a bit of money, largely for the benefit of the real estate developer. Yet people into strength training (those who are actually strong across many facets of real life) know that users of these machines gain no strength beyond the initial phase –and have known that for at least two and a half millennia. In fact, by having recourse to complicated equipment that typically target very few muscles, regular users will eventually pear-shape and get weaker over time, with skills that do not transfer outside of the very machine that they trained on. The equipment may have some use in a hospital or a rehabilitation program, not for regular people. For, on the other hand, the simpler barbell equipment (a metal bar with two weights on both ends) is the only one that gets you to recruit your entire body for exercises –and it is the simplest and cheapest to get. All you need is to learn the safety skills to move off the floor the heavier piece of metal you can lift while avoiding injury.<br>
+    
+    What you want is shoes to run outside when you can (and perhaps some pants that don’t make you look ridiculous), and a barbell with weights. As I am writing these lines I am checking the brochure of a fancy hotel where I will be spending the next two days. The brochure was put together by some MBA: it is glossy, shows all the machines and the jars of the color-rich juices they give you to “improve” your health. They even have a swimming pool; but no barbell.<br>
+                                </p>
+                                <div class="float-start" >
+                                    <img src="pic/bootstrap-icons/hand-thumbs-up.svg">8.1k
+                                </div>
+                                <div class="float-end">
+                                    <img src="pic/bootstrap-icons/box-arrow-up.svg">
+                                    <img src="pic/bootstrap-icons/bookmark-fill.svg">
+                                    <img class="" src="pic/bootstrap-icons/three-dots.svg">
+                                </div> 
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         <div id="slidepic" class="carousel slide cardconan my-3 rounded"  data-bs-ride="carousel">
@@ -355,7 +533,7 @@
              </button>
         </div><br/>
 
-        <div class="card shadow-lg my-2 rounded mx-auto" style="width:350px;font-size:12px"  id="cardbook">
+        <div class="card shadow-lg rounded mx-auto" style="width:350px;font-size:12px"  id="cardbook">
             <div class="card-header justify-content-between" style="line-height:1px;margin-bottom:-15px;margin-top: 0px;">
                 <p><img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill"> <strong>nassim taleb</strong>
                 <a href="#" class="btn btn-primary right" >View profile</a></p>

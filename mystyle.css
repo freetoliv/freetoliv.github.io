@@ -65,8 +65,11 @@ h1 {
   padding:42px 0;
 }
 
+div#cardbook {padding-top:-50px}
+  
 div#mysitehead {
-  padding:96px 0;
+  padding-bottom:96px;
+  margin-top:-50px;
 }
 
 .btngroupfell{margin-left:120px}
@@ -80,6 +83,35 @@ div#mysitehead {
 html:not(.dark) .accent,.dark .tagline {
 background:-webkit-linear-gradient(315deg,#42d392 25%,#647eff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent
 }
+
+            div#box {
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    margin-left: 48px;
+    margin-top:-60px;
+    background-color: rgb(247, 241, 241);
+  }
+    .buttonstyle{
+  display: inline-flex;
+    background-image: linear-gradient(147deg, #f98c48 0%, #f2e972 74%);
+    padding: 2px 25px;
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    justify-content: center;
+    margin-left:95px;
+    margin-top: -35px;
+    text-align: center;
+    word-spacing: -2px;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+    
+  }
 
 
 
