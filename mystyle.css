@@ -1,5 +1,5 @@
 :root {
-            --navgation-background-color: #F5E8C7;
+            --navgation-background-color: background: rgba(0, 0, 0, 0.5);
             --nav-display: flex;
         }
 
