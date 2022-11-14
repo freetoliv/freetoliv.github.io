@@ -50,12 +50,13 @@
           #slidepic  {display: none}
           #tablebook {display: none}
           #headicons {display: none;}
+          #headmoblie {display: none;}
         }
 
          </style>
     </head>
 
-<body class="navigation">
+<body class="navigation" onscroll="typeWriter()">
     <script>
         // Color mode changer script
         const SetColorMode = () => {
@@ -83,36 +84,40 @@
     
     <div class="container">
         
-        <div>
-            <ul class="nav bg-grey rounded">
-                <div class="container-fluid">
-                    <div id="mynavbar" >
-                        <a  style="margin:0px" type="button" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                            <img src="pic/bootstrap-icons/three-dots.svg" alt="menuhead">
-                        </a>
-                        <ul class="nav nav-tabs justify-content-end">
-                            <li class="nav-item px-2 form-check form-switch">
+        
+            
+                
+                    <div class="container" >
+                        <div class="clearfix">
+                        
+                        <div class="float-start">
+                            <span style="color:#4285F4;font-size:40px;font-weight:400;">R</span><span style="color:#EA4335;font-size:30px;font-weight:400">u</span><span style="color:#FBBC05;font-size:30px;font-weight:400">s</span><span style="color:#4285F4;font-size:40px;font-weight:400">h</span><span style="color:#34A853;font-size:30px;font-weight:400">i</span><span style="color:#EA4335;font-size:30px;font-weight:400">i</span>
+                        </div>
+                        <div class="float-end">
+                            <a class=" form-check form-switch">
                                 <input onclick="SetColorMode()" class="form-check-input" id="myswitch" type="checkbox" name="darkmode"  style="background-color:rgb(96, 95, 95)" value="false" checked aria-disabled="true">
-                                <label class="form-check-label" for="myswitch"></label> </li>
-                            <li class="nav-item px-1"><a href="https://appleid.apple.com/sign-in"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apple" target="_blank">
+                                <label class="form-check-label" for="myswitch"></label> </a>
+                            <a href="https://appleid.apple.com/sign-in"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apple" target="_blank">
                             <img src="pic/bootstrap-icons/apple.svg" class="mx-auto" alt="myappleid" width="16" height="16">
-                            <a></li>
-                            <li class="nav-item px-1"><a href="https://www.google.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google">
+                            <a>
+                            <a href="https://www.google.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google">
                             <img src="pic/bootstrap-icons/google.svg" class="mx-auto" alt="mygoogle" width="15" height="15">
-                            <a></li>
-                            <li class="nav-item px-1"><a href="https://instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram">
+                            <a>
+                            <a href="https://instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram">
                             <img src="pic/bootstrap-icons/instagram.svg" class="mx-auto" alt="myinstagram" width="15" height="15">
-                            <a></li>
-                            <li class="nav-item px-1"><a href="#" class="link-info" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Share to friends">
+                            <a>
+                            <a href="#" class="link-info" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Share to friends">
                             <img src="pic/bootstrap-icons/share.svg" class="mx-auto"  alt="myshare" width="15" height="15">
-                            <a></li>
+                            <a>
                             <a href="#signin" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in">
                                 <img src="pic/bootstrap-icons/person-circle.svg" alt="signin">
                             </a>
                             <a href="#battery" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in">
-                                <div id="batterys" style="color:black" class="fa"></div>
+                                <span id="batterys" style="color:black" class="fa"></span>
                             </a>
-                        </ul>
+                        </div>
+                        </div>
+                        </div>
                         <div class="modal" id="signin">
                             <div class="modal-dialog modal-fullscreen-sm">
                                 <div class="modal-content">
@@ -151,10 +156,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
+                    </div><hr>
+                
+            
+        
         
     
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -280,24 +285,12 @@
         </div>
     </div>
 
-    <div style="margin-top:-70px" id="headmoblie">
-        <div class="container"> 
-            <div class="input-group" style="width:340px;">
-                <span style="margin-left:0" class="float-start"><img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill"></span>
-                <input class="form-control" type="text"  placeholder="Search">
-                <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/qr-code-scan.svg"></span>
-                <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/mic.svg"></span>
-                <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/camera-fill.svg"></span>
-                <span class="input-group-text bg-light"> <img src="pic/bootstrap-icons/search.svg" alt="search"></span>
-            </div>
-        </div>   
-    </div>
 
     <div style="margin-top:0px" id="headicons">
         <nav class="navbar navbar-expand-sm navbar-dark bg-success rounded" >
             <div class="container-fluid">
                 <a class="navbar-brand" href="javascript:void(0)">
-                    <img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill">
+                    <img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill" id="headconan">
                 </a>
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
@@ -318,7 +311,7 @@
         
 
         <div class="list-group rounded">
-            <div id="headbar">
+            <div id="headbar" >
             
                 <ul class="nav nav-tabs" role="tablist" v-if="bookcate.length">
                     <li class="nav-item" v-for="item of bookcate">
@@ -337,8 +330,8 @@
             </div>
 
             <div id="mysitehead" class="mx-auto">
-                <h1 class="tagline text-center">
-                The Book<br><span class="accent">RuShi</span><br>Recommend
+                <h1 class="tagline text-center"><span>The Book</span>
+                <br><span id="demod" class="accent"></span><br><span>Recommend</span>
                 </h1>
                 <audio src="music/ussewa.mp3" playsong></audio>
                 <div class="btn-group btngroupfell rounded">
@@ -346,6 +339,15 @@
                     <button class="pause btnfell"><img src="pic/bootstrap-icons/pause-circle.svg"></button>
                 </div>  
             </div><hr>
+            
+            <div id="speical-sponsor" class="mx-auto">
+                <p style="text-align:center;font-size:13px;">Special Sponsor</p>
+                <a href="https://appwrite.io" target="_blank" rel="sponsored noopener">
+                    <img style="margin:-10px 0 2px 0" src="pic/appwrite.svg" alt="appwriter">
+                </a>
+                <p style="text-align:center;font-size:13px;">Open Source Firebase Alternative</p>
+            </div><hr>
+        
 
             
                 <div  >
@@ -714,6 +716,7 @@
             <use xlink:href="pic/bootstrap-icons/alipay.svg"/>
             
           </svg>
+          <hr>
         <ul class="breadcrumb justify-content-center">
             <li class="breadcrumb-item"><a href="https://discord.gg/vHgjYW2z"  target="_blank">
             <img src="pic/bootstrap-icons/discord.svg" class="mx-auto" alt="mydiscord" width="25" height="25">
@@ -1036,7 +1039,35 @@
         </div>
         <button id="myBtn" onclick="myFounction()">Pause</button>
     </div>
+    <div class="container">
+        <h5 style="text-align:center">Subscribe to our weekly newsletter</h5>
+        <div class="input-group">
+            <form method="post" class="mx-auto">
+                <input class="input form-control-lg" id="memberemail" name="member[email]" type="email" placeholder="Email address"  required>
+                <input class="btn" id="membersubmit" name="membersubscribe" type="submit" value="subscribe" style="margin-left:-87px; margin-bottom:6px;padding:5px;background-color:#f02e65;color:white">  
+            </form>
+        </div>
+        <p style="text-align:center">you can read the previous issues and listen<br> to our podcast at<a href="#" target="_blank"> rushi.org</a>, You may <br>also go social at <a href="#">Twitter</a>, or join our home at <a href="#">Discord</a>
+        .</p><br><hr><br><
+        
+    </div>
 
+    
+    <script>
+        var i = 0;
+        var txt = ['The Book', 'Rushi', 'Recommed'];
+        var speed = 500;
+
+        function typeWriter() {
+        if (i < txt[1].length) {
+        document.getElementById("demod").innerHTML += txt[1].charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+     
+    </script>
+    
         
 
 
@@ -1128,21 +1159,28 @@
         var a;
         a = document.getElementById("batterys");
         a.innerHTML = "&#xf244;";
+        a.style.color = "red";
         setTimeout(function () {
             a.innerHTML = "&#xf243;";
+            a.style.color = "darkred";
         }, 1000);
         setTimeout(function () {
             a.innerHTML = "&#xf242;";
+            a.style.color = "yellow";
         }, 2000);
         setTimeout(function () {
             a.innerHTML = "&#xf241;";
+            a.style.color = "green";
         }, 3000);
         setTimeout(function () {
             a.innerHTML = "&#xf240;";
+            a.style.color = "black";
         }, 5000);
     }
     chargebattery();
     setInterval(chargebattery, 5000);
+
+    
    </script>
     
  
