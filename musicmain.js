@@ -31,12 +31,7 @@ let track_list = [
         image: "pic/lemon.jpg",
         path: "music/lemon.mp3"
     },
-    {
-        name: "孤勇者",
-        artist: "陈奕迅",
-        image: "pic/guyongzhe.jpg",
-        path: "music/guyongzhe.mp3"
-    },
+
     {
         name: "すずめ",
         artist: "十明",
@@ -50,7 +45,7 @@ let track_list = [
         path: "music/hkrbi.mp3",
     },
     {
-        name: "渡月橋 ~君 想ふ~",
+        name: "渡月橋~君想ふ~",
         artist: "倉木麻衣",
         image: "pic/kimiomo.jpg",
         path: "music/kimiomo.mp3",
