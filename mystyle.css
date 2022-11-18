@@ -52,6 +52,9 @@ span.input-group-text {
   flost: left
 }
 
+a{
+  transition: background-color .3s}
+
 a:link {
   text-decoration: none;
 }
@@ -59,7 +62,11 @@ a:link {
 a:hover {
   text-decoration: underline;
   color: hotpink;
+  background-color: grey;
 }
+
+
+
 
 h1 { 
   padding:42px 0;
@@ -95,19 +102,36 @@ background:-webkit-linear-gradient(315deg,#42d392 25%,#647eff);background-clip:t
            div#bookreading{
     margin:auto;}
   }
-  a#website {
+  
+  
+
+  div~a#website {
     
-    width: 80px;
-    height: 80px;
+   
     padding-left: 13px;
     padding-top:13px;
     background-color: rgb(247, 241, 241);
-    border-radius: 20px
+    border-radius: 25px
     
    
 }
-    
+   img#websiteicon:hover {
+     animation: shake 0.5s;
+     animation-iteration-count: infinite;}
 
+   @keyframes shake {
+     0% {transform: translate(1px, 1px) rotate(0deg); }
+     10% {transform: translate(-1px, -2px) rotate(-1deg); }
+     20% {transtorm; translate(-3px, 0px) rotate(1deg); }   
+     30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
     .buttonstyle{
   display: inline-flex;
@@ -132,3 +156,7 @@ background:-webkit-linear-gradient(315deg,#42d392 25%,#647eff);background-clip:t
 #headbar {
   margin-top:-35px;
   margin-bottom:8px}
+
+
+
+
