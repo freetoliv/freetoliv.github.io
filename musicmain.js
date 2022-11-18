@@ -20,22 +20,40 @@ let curr_track = document.createElement('audio');
 
 let track_list = [
     {
-        name: "GU YONG ZHE",
-        artist: "Eson",
+        name: "Feel Special",
+        artist: "TWICE",
+        image: "pic/feels.jpg",
+        path: "music/feels.mp3"
+    },
+    {
+        name: "Lemon",
+        artist: "米津玄师",
+        image: "pic/lemon.jpg",
+        path: "music/lemon.mp3"
+    },
+    {
+        name: "孤勇者",
+        artist: "陈奕迅",
         image: "pic/guyongzhe.jpg",
         path: "music/guyongzhe.mp3"
     },
     {
-        name: "Euthusiast",
-        artist: "Tours",
-        image: "Image URL",
-        path: "Enthusiast.mp3"
+        name: "すずめ",
+        artist: "十明",
+        image: "pic/suzume.jpg",
+        path: "music/suzume.mp3"
     },
     {
-        name: "Shipping Lanes",
-        artist: "Chad Crouch",
-        image: "Image URL",
-        path: "Shipping_Lanes.mp3",
+        name: "ほころび",
+        artist: "cover",
+        image: "pic/hkrbi.jpg",
+        path: "music/hkrbi.mp3",
+    },
+    {
+        name: "渡月橋 ~君 想ふ~",
+        artist: "倉木麻衣",
+        image: "pic/kimiomo.jpg",
+        path: "music/kimiomo.mp3",
     },
 ];
 
@@ -46,7 +64,7 @@ function loadTrack(track_index) {
     curr_track.src = track_list[track_index].path;
     curr_track.load();
 
-    track_art.getElementsByClassName.backgroundImage =
+    track_art.style.backgroundImage =
         "url(" + track_list[track_index].image + ")";
     track_name.textContent = track_list[track_index].name;
     track_artist.textContent = track_list[track_index].artist;
