@@ -51,12 +51,6 @@ let track_list = [
         path: "http://m10.music.126.net/20221120170612/b2db5b98f0750a5652668f47914afdcd/ymusic/cec8/288b/2067/e0c9f14cc7901aaccfbe8277e2ebcef2.mp3"
     },
     {
-        name: "千と千尋",
-        artist: "久石譲",
-        image: "pic/sendosen.jpg",
-        path: "http://m10.music.126.net/20221120164618/6b832a2e9f0426ae5cbdc4624e44b152/ymusic/d092/6700/f249/40af108cd3992782d44e680ed3678129.mp3"
-    },
-    {
         name: "いつも何度でも",
         artist: "千と",
         image: "pic/mooncloud.jpg",
