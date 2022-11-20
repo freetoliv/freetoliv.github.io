@@ -60,7 +60,7 @@ let track_list = [
         name: "いつも何度でも",
         artist: "千と",
         image: "pic/mooncloud.jpg",
-        path: "https://ee-sycdn.kuwo.cn/30f7b57db5311991e0c272881fd27472/6379d7e1/resource/n3/65/32/2830547824.mp3"
+        path: "http://m10.music.126.net/20221120165341/535219b30a886acb90c3a40ebba919d2/ymusic/ec93/f7c9/b1ab/be920377ac2a6e0b4be999ba91ebff99.mp3"
     },
     {
         name: "天空の城",
