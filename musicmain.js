@@ -42,13 +42,13 @@ let track_list = [
         name: "ほころび",
         artist: "cover",
         image: "pic/hkrbi.jpg",
-        path: "https://nc01-sycdn.kuwo.cn/0567d74b0fe42d38e4131c8ba7545943/6379d1f4/resource/n2/26/43/3130905223.mp3"
+        path: "https://nc01-sycdn.kuwo.cn/b4ff4bdf3cce8815e77f2ecfa1ea3116/6379e72e/resource/n2/26/43/3130905223.mp3"
     },
     {
-        name: "渡月橋~君想ふ~",
-        artist: "倉木麻衣",
-        image: "pic/kimiomo.jpg",
-        path: "https://sf-sycdn.kuwo.cn/06108c00b2f040ec94d38d0887473274/6379e2bd/resource/n1/80/86/3104468332.mp3"
+        name: " Let It Go",
+        artist: "Loni Lovato ",
+        image: "http://p4.music.126.net/uCAsEfgVE_JFmxjwpS_BIg==/109951163400590084.jpg?param=300x300",
+        path: "http://m10.music.126.net/20221120170612/b2db5b98f0750a5652668f47914afdcd/ymusic/cec8/288b/2067/e0c9f14cc7901aaccfbe8277e2ebcef2.mp3"
     },
     {
         name: "千と千尋",
