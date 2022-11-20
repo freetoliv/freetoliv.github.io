@@ -48,7 +48,13 @@ let track_list = [
         name: "渡月橋~君想ふ~",
         artist: "倉木麻衣",
         image: "pic/kimiomo.jpg",
-        path: "music/kimiomo.mp3",
+        path: "http://m10.music.126.net/20221120152405/5a2ec6d80b57bef319acb8c7f9430711/ymusic/400d/7915/8de1/ab3e526b2727cac42f6d8822275c410d.mp3",
+    },
+    {
+        name: "色彩",
+        artist: "yama",
+        image: "pic/feels.jpg",
+        path: "https://music.163.com/#/song?id=1980986120"
     },
 ];
 
