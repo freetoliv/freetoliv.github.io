@@ -42,29 +42,23 @@ let track_list = [
         name: "ほころび",
         artist: "cover",
         image: "pic/hkrbi.jpg",
-        path: "https://nc01-sycdn.kuwo.cn/0567d74b0fe42d38e4131c8ba7545943/6379d1f4/resource/n2/26/43/3130905223.mp3",
+        path: "https://nc01-sycdn.kuwo.cn/0567d74b0fe42d38e4131c8ba7545943/6379d1f4/resource/n2/26/43/3130905223.mp3"
     },
     {
         name: "渡月橋~君想ふ~",
         artist: "倉木麻衣",
         image: "pic/kimiomo.jpg",
-        path: "http://m10.music.126.net/20221120152405/5a2ec6d80b57bef319acb8c7f9430711/ymusic/400d/7915/8de1/ab3e526b2727cac42f6d8822275c410d.mp3",
-    },
-    {
-        name: "色彩",
-        artist: "yama",
-        image: "pic/feels.jpg",
-        path: "http://m801.music.126.net/20221120153438/43289d5e2084bd4099e1f712fbaa9e45/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/9105116687/a3d9/64bb/eb99/6954aab989bd8b13043838c3fdce68e6.mp3"
+        path: "https://sf-sycdn.kuwo.cn/06108c00b2f040ec94d38d0887473274/6379e2bd/resource/n1/80/86/3104468332.mp3"
     },
     {
         name: "千と千尋",
         artist: "久石譲",
         image: "pic/sendosen.jpg",
-        path: "http://m10.music.126.net/20221120155212/62afe81aad838d6c110c7f650f284345/ymusic/d092/6700/f249/40af108cd3992782d44e680ed3678129.mp3"
+        path: "http://m10.music.126.net/20221120164618/6b832a2e9f0426ae5cbdc4624e44b152/ymusic/d092/6700/f249/40af108cd3992782d44e680ed3678129.mp3"
     },
     {
-        name: "月光の雲海",
-        artist: "久石譲",
+        name: "いつも何度でも",
+        artist: "千と",
         image: "pic/mooncloud.jpg",
         path: "https://ee-sycdn.kuwo.cn/30f7b57db5311991e0c272881fd27472/6379d7e1/resource/n3/65/32/2830547824.mp3"
     },
