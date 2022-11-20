@@ -23,13 +23,13 @@ let track_list = [
         name: "Feel Special",
         artist: "TWICE",
         image: "pic/feels.jpg",
-        path: "https://su-sycdn.kuwo.cn/658cae796759f4814d4cfbeeb0a9b9e5/6379d272/resource/n1/93/70/3843693700.mp3"
+        path: "https://su-sycdn.kuwo.cn/40ea0500963c37336bfffdfe1c0fbfe0/6379e63a/resource/n1/93/70/3843693700.mp3",
     },
     {
         name: "Lemon",
         artist: "米津玄师",
         image: "pic/lemon.jpg",
-        path: "https://sc-sycdn.kuwo.cn/0aa4f96483000b2b548ff7d0dee345fc/6379d239/resource/n2/52/60/3401903182.mp3"
+        path: "https://sc-sycdn.kuwo.cn/de7a8cf267c245b3f628b73ff814e0dd/6379e667/resource/n2/52/60/3401903182.mp3",
     },
 
     {
