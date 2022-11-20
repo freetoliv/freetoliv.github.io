@@ -36,43 +36,43 @@ let track_list = [
         name: "すずめ",
         artist: "十明",
         image: "pic/suzume.jpg",
-        path: "https://lo-sycdn.kuwo.cn/24d210093c9dc2cb6753d41f4a8bc4e2/6379da82/resource/n3/49/98/3145297027.mp3"
+        path: "https://lo-sycdn.kuwo.cn/24d210093c9dc2cb6753d41f4a8bc4e2/6379da82/resource/n3/49/98/3145297027.mp3",
     },
     {
         name: "ほころび",
         artist: "cover",
         image: "pic/hkrbi.jpg",
-        path: "https://nc01-sycdn.kuwo.cn/b4ff4bdf3cce8815e77f2ecfa1ea3116/6379e72e/resource/n2/26/43/3130905223.mp3"
+        path: "https://nc01-sycdn.kuwo.cn/b4ff4bdf3cce8815e77f2ecfa1ea3116/6379e72e/resource/n2/26/43/3130905223.mp3",
     },
     {
         name: " Let It Go",
         artist: "Loni Lovato ",
         image: "http://p4.music.126.net/uCAsEfgVE_JFmxjwpS_BIg==/109951163400590084.jpg?param=300x300",
-        path: "http://m10.music.126.net/20221120170612/b2db5b98f0750a5652668f47914afdcd/ymusic/cec8/288b/2067/e0c9f14cc7901aaccfbe8277e2ebcef2.mp3"
+        path: "http://m10.music.126.net/20221120170612/b2db5b98f0750a5652668f47914afdcd/ymusic/cec8/288b/2067/e0c9f14cc7901aaccfbe8277e2ebcef2.mp3",
     },
     {
         name: "いつも何度でも",
         artist: "千と",
         image: "pic/mooncloud.jpg",
-        path: "http://m10.music.126.net/20221120165341/535219b30a886acb90c3a40ebba919d2/ymusic/ec93/f7c9/b1ab/be920377ac2a6e0b4be999ba91ebff99.mp3"
+        path: "http://m10.music.126.net/20221120165341/535219b30a886acb90c3a40ebba919d2/ymusic/ec93/f7c9/b1ab/be920377ac2a6e0b4be999ba91ebff99.mp3",
     },
     {
         name: "天空の城",
         artist: "久石譲",
         image: "pic/solar.jpg",
-        path: "https://win-web-ri01-sycdn.kuwo.cn/c16ac1fe1f00a728c1cb492d6c1af2cc/6379d983/resource/n1/87/56/4272600974.mp3"
+        path: "https://win-web-ri01-sycdn.kuwo.cn/c16ac1fe1f00a728c1cb492d6c1af2cc/6379d983/resource/n1/87/56/4272600974.mp3",
     },
     {
         name: "secret base",
         artist: "茅野愛衣",
         image: "pic/secret.jpg",
-        path: "https://cj-sycdn.kuwo.cn/129a6736e382ea3be34a9f50180a398a/6379dbd9/resource/n3/48/77/3545213556.mp3"
+        path: "https://cj-sycdn.kuwo.cn/129a6736e382ea3be34a9f50180a398a/6379dbd9/resource/n3/48/77/3545213556.mp3",
     },
     {
         name: "senorita",
         artist: "Shawn",
         image: "http://p4.music.126.net/B3IUMOV0-TLyEaGgifSysw==/109951164529637213.jpg?param=300x300",
-        path: "https://lq-sycdn.kuwo.cn/42830ccd1882c1fd8f9ef776c469d552/6379de93/resource/n3/76/48/2605344997.mp3"
+        path: "https://lq-sycdn.kuwo.cn/42830ccd1882c1fd8f9ef776c469d552/6379de93/resource/n3/76/48/2605344997.mp3",
     },
 ];
 
