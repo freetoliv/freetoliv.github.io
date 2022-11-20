@@ -36,7 +36,7 @@ let track_list = [
         name: "すずめ",
         artist: "十明",
         image: "pic/suzume.jpg",
-        path: "music/suzume.mp3"
+        path: "https://lo-sycdn.kuwo.cn/24d210093c9dc2cb6753d41f4a8bc4e2/6379da82/resource/n3/49/98/3145297027.mp3"
     },
     {
         name: "ほころび",
@@ -55,6 +55,36 @@ let track_list = [
         artist: "yama",
         image: "pic/feels.jpg",
         path: "http://m801.music.126.net/20221120153438/43289d5e2084bd4099e1f712fbaa9e45/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/9105116687/a3d9/64bb/eb99/6954aab989bd8b13043838c3fdce68e6.mp3"
+    },
+    {
+        name: "千と千尋",
+        artist: "久石譲",
+        image: "pic/sendosen.jpg",
+        path: "http://m10.music.126.net/20221120155212/62afe81aad838d6c110c7f650f284345/ymusic/d092/6700/f249/40af108cd3992782d44e680ed3678129.mp3"
+    },
+    {
+        name: "月光の雲海",
+        artist: "久石譲",
+        image: "pic/mooncloud.jpg",
+        path: "https://ee-sycdn.kuwo.cn/30f7b57db5311991e0c272881fd27472/6379d7e1/resource/n3/65/32/2830547824.mp3"
+    },
+    {
+        name: "天空の城",
+        artist: "久石譲",
+        image: "pic/solar.jpg",
+        path: "https://win-web-ri01-sycdn.kuwo.cn/c16ac1fe1f00a728c1cb492d6c1af2cc/6379d983/resource/n1/87/56/4272600974.mp3"
+    },
+    {
+        name: "secret base",
+        artist: "茅野愛衣",
+        image: "pic/secret.jpg",
+        path: "https://cj-sycdn.kuwo.cn/129a6736e382ea3be34a9f50180a398a/6379dbd9/resource/n3/48/77/3545213556.mp3"
+    },
+    {
+        name: "senorita",
+        artist: "Shawn",
+        image: "http://p4.music.126.net/B3IUMOV0-TLyEaGgifSysw==/109951164529637213.jpg?param=300x300",
+        path: "https://lq-sycdn.kuwo.cn/42830ccd1882c1fd8f9ef776c469d552/6379de93/resource/n3/76/48/2605344997.mp3"
     },
 ];
 
