@@ -23,13 +23,13 @@ let track_list = [
         name: "Feel Special",
         artist: "TWICE",
         image: "pic/feels.jpg",
-        path: "music/feels.mp3"
+        path: "https://su-sycdn.kuwo.cn/658cae796759f4814d4cfbeeb0a9b9e5/6379d272/resource/n1/93/70/3843693700.mp3"
     },
     {
         name: "Lemon",
         artist: "米津玄师",
         image: "pic/lemon.jpg",
-        path: "music/lemon.mp3"
+        path: "https://sc-sycdn.kuwo.cn/0aa4f96483000b2b548ff7d0dee345fc/6379d239/resource/n2/52/60/3401903182.mp3"
     },
 
     {
@@ -42,7 +42,7 @@ let track_list = [
         name: "ほころび",
         artist: "cover",
         image: "pic/hkrbi.jpg",
-        path: "music/hkrbi.mp3",
+        path: "https://nc01-sycdn.kuwo.cn/0567d74b0fe42d38e4131c8ba7545943/6379d1f4/resource/n2/26/43/3130905223.mp3",
     },
     {
         name: "渡月橋~君想ふ~",
@@ -54,7 +54,7 @@ let track_list = [
         name: "色彩",
         artist: "yama",
         image: "pic/feels.jpg",
-        path: "https://music.163.com/#/song?id=1980986120"
+        path: "http://m801.music.126.net/20221120153438/43289d5e2084bd4099e1f712fbaa9e45/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/9105116687/a3d9/64bb/eb99/6954aab989bd8b13043838c3fdce68e6.mp3"
     },
 ];
 
