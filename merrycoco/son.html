@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+setInterval(function() {
+
+  
+  const d = new Date();
+
+  let years = d.getFullYear();
+  let mouths = d.getMonth();
+  
+  let days = d.getDate();
+  let hours = d.getHours();
+  let minutes = d.getMinutes();
+  let seconds = d.getSeconds();
+    
+  
+  document.getElementById("demo").innerHTML =years + ":" + days + " " + hours + ": "
+  + minutes + ": " + seconds + " ";
+}, 1000);
+</script>
+
+</body>
+</html>
