@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,4 +12,961 @@
     <div id="app"></div>
     
   </body>
+</html>
+    <head>
+        <title>SOME WONDERFUL BOOKS</title>
+        <link rel="icon" type="image/x-icon" href="pic/favicon.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="mystyle.css" rel="stylesheet">
+        <link href="picgallery.css" rel="stylesheet">
+        <link href="nightstyle.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+        #rowpic {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        }
+
+        #colomnpic {
+        -ms-flex:25%;
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        }
+
+        #colomnoic img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        }
+
+
+        #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index:-1;
+        }
+
+        #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        }
+
+        #myBtn:hover {
+        background: #ddd;
+        color: black;
+        }
+    
+        @media screen and (min-width: 768px) {
+          #cardbook  {display: none}
+          #mysitehead {display: none}
+          #headmoblie {display: none;}
+          #boxreading {display: none;}
+        }
+
+        @media screen and (max-width: 768px) {
+          #pagetitle {display: none}
+          #bookintro {display: none }
+          #slidepic  {display: none}
+          #tablebook {display: none}
+          #headicons {display: none;}
+          #headmoblie {display: none;}
+          #colomnpic {
+        -ms-flex: 25%;
+        flex:25%;
+        max-width: 25%;
+        }
+        }
+
+         </style>
+    </head>
+
+<body class="navigation" onscroll="typeWriter()">
+    <script>
+        // Color mode changer script
+        const SetColorMode = () => {
+          if(localStorage.getItem("colorMode") === null) {
+            localStorage.setItem("colorMode", "light");
+          }
+  
+          if(localStorage.getItem("colorMode") === "light") {
+            localStorage.setItem("colorMode", "dark");
+          } else if (localStorage.getItem("colorMode") === "dark") {
+            localStorage.setItem("colorMode", "light");
+          }
+  
+          document.documentElement.setAttribute("data-theme", localStorage.getItem("colorMode"));
+        }
+  
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("colorMode"));
+  
+      </script>
+      
+    <video autoplay muted loop id="myVideo">
+        <source src="video/revenge.mp4" type="video/mp4">
+        Your browser does not support HTM5 video.
+    </video>
+    
+    <div class="container">
+        
+        
+            
+                
+                    <div class="container" >
+                        <div class="clearfix">
+                        
+                        <div class="float-start">
+                            <span style="color:#4285F4;font-size:40px;font-weight:400;">R</span><span style="color:#EA4335;font-size:30px;font-weight:400">u</span><span style="color:#FBBC05;font-size:30px;font-weight:400">s</span><span style="color:#4285F4;font-size:40px;font-weight:400">h</span><span style="color:#34A853;font-size:30px;font-weight:400">i</span><span style="color:#EA4335;font-size:30px;font-weight:400">i</span>
+                        </div>
+                        <div class="float-end">
+                            <a class=" form-check form-switch">
+                                <input onclick="SetColorMode()" class="form-check-input" id="myswitch" type="checkbox" name="darkmode"  style="background-color:rgb(96, 95, 95)" value="false" checked aria-disabled="true">
+                                <label class="form-check-label" for="myswitch"></label> </a>
+                            <a href="https://appleid.apple.com/sign-in"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apple" target="_blank">
+                            <img src="pic/bootstrap-icons/apple.svg" class="mx-auto" alt="myappleid" width="16" height="16">
+                            <a>
+                            <a href="https://www.google.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google">
+                            <img src="pic/bootstrap-icons/google.svg" class="mx-auto" alt="mygoogle" width="15" height="15">
+                            <a>
+                            <a href="https://instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram">
+                            <img src="pic/bootstrap-icons/instagram.svg" class="mx-auto" alt="myinstagram" width="15" height="15">
+                            <a>
+                            <a href="#" class="link-info" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Share to friends">
+                            <img src="pic/bootstrap-icons/share.svg" class="mx-auto"  alt="myshare" width="15" height="15">
+                            <a>
+                            <a href="#signin" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in">
+                                <img src="pic/bootstrap-icons/person-circle.svg" alt="signin">
+                            </a>
+                            <a href="#battery" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in">
+                                <span id="batterys" style="color:black" class="fa"></span>
+                            </a>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="modal" id="signin">
+                            <div class="modal-dialog modal-fullscreen-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title mx-auto"><strong>Welcome to RSbook!</strong></h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="was-validated">
+                                            <div class="mb-3 mt-3 form-floating">
+                                                <label for="email" class="form-label" id="enter">Enter your email:</label>
+                                                <input type="email" class="form-control" id="email" placeholder="email" name="email" required>
+                                                <div class="valid-feedback">
+                                                    Input valid<img src="pic/bootstrap-icons/check2-circle.svg"></div>
+                                                <div class="invalid-feedback">Please input right form<img src="pic/bootstrap-icons/x-octagon.svg"> </div>
+                                            </div>
+                                            <div class="mb-3 form-floating">
+                                                <label for="pwd" class="form-label" id="enter">Enter your password:</label>
+                                                <input type="password" class="form-control" id="pwd" placeholder="password" name="pwd" required>
+                                                <div class="valid-feedback">
+                                                    Input valid<img src="pic/bootstrap-icons/check2-circle.svg"></div>
+                                                <div class="invalid-feedback">Please input right form<img src="pic/bootstrap-icons/x-octagon.svg"> </div>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                                                <label class="form-check-label" for="mycheck">I agree on the terms and conditions</label>
+                                                <div class="valid-feedback">
+                                                    valid<img src="pic/bootstrap-icons/check2-circle.svg"></div>
+                                                <div class="invalid-feedback">Check this checkbox to continue<img src="pic/bootstrap-icons/x-octagon.svg"> </div>
+                                            </div>
+                                            <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between unborded"><button type="submit" class="btn btn-light">Sign in</button>
+                                            <a  type="button">Sign up</button></li></ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><hr>
+                
+            
+        
+        
+    
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Book Category</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group">
+                <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead">
+                Computer<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+                </button>
+                <div class="collapse" id="demohead">
+                    <div class="list-group" id="category1">
+                        <a href="#prog"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Programming<span class="badge bg-danger rounded-pill">23</span>
+                        </a>
+                        <div id="prog" class="collapse show" data-bs-parent="#category1">.</div>
+                        <a href="#syst" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            System<span class="badge bg-danger rounded-pill">34</span>
+                        </a>
+                        <div id="syst" class="collapse" data-bs-parent="#category1">.</div>
+                        <a href="#netw" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Network<span class="badge bg-danger rounded-pill">15</span>
+                        </a>
+                        <div id="netw" class="collapse" data-bs-parent="#category1">.</div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead1">
+                Mathematics<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+                </button>
+                <div class="collapse" id="demohead1">
+                    <div class="list-group" id="category2">
+                        <a href="#real"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Real Analysis<span class="badge bg-danger rounded-pill">93</span>
+                        </a>
+                        <div id="real" class="collapse show" data-bs-parent="#category2">.</div>
+                        <a href="#comp" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Complex Analysis<span class="badge bg-danger rounded-pill">22</span>
+                        </a>
+                        <div id="comp" class="collapse" data-bs-parent="#category2">.</div>
+                        <a href="#diff" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Differential Equations<span class="badge bg-danger rounded-pill">16</span>
+                        </a>
+                        <div id="diff" class="collapse" data-bs-parent="#category2">.</div>
+                    </div>
+                </div>
+    
+                    <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead2">
+                Economy<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <div class="collapse" id="demohead2">
+                <div class="list-group" id="category3">
+                    <a href="#micr"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Microeconomics<span class="badge bg-danger rounded-pill">45</span>
+                    </a>
+                    <div id="micr" class="collapse show" data-bs-parent="#category3"> </div>
+                    <a href="#macr" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Macroeconomics<span class="badge bg-danger rounded-pill">54</span>
+                    </a>
+                    <div id="macr" class="collapse" data-bs-parent="#category3">.</div>
+                    <a href="#beha" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Behavioral Economics<span class="badge bg-danger rounded-pill">24</span>
+                    </a>
+                    <div id="beha" class="collapse" data-bs-parent="#category3">.</div>
+                </div>
+            </div>
+    
+                    <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead3">
+                Philosophy<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <div class="collapse" id="demohead3">
+                <div class="list-group" id="category4">
+                    <a href="#arist"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Aristotelian Realism<span class="badge bg-danger rounded-pill">new</span>
+                    </a>
+                    <div id="arist" class="collapse show" data-bs-parent="#category4">.</div>
+                    <a href="#kant" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Kantian Conceptualism<span class="badge bg-danger rounded-pill">25</span>
+                    </a>
+                    <div id="kant" class="collapse" data-bs-parent="#category4">.</div>
+                    <a href="#huss" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Husserlian Descriptivism<span class="badge bg-danger rounded-pill">98</span>
+                    </a>
+                    <div id="huss" class="collapse" data-bs-parent="#category4">.</div>
+                </div>
+            </div>
+    
+                    <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead4">
+                Medical<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <div class="collapse" id="demohead4">
+                <div class="list-group" id="category5">
+                    <a href="#alle"  data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Allergy and Immunology<span class="badge bg-danger rounded-pill">97</span>
+                    </a>
+                    <div id="alle" class="collapse show" data-bs-parent="#category5">.</div>
+                    <a href="#anes" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Anesthesiology<span class="badge bg-danger rounded-pill">44</span>
+                    </a>
+                    <div id="anes" class="collapse" data-bs-parent="#category5">.</div>
+                    <a href="#derm" data-bs-toggle="collapse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Dermatology<span class="badge bg-danger rounded-pill">75</span>
+                    </a>
+                    <div id="derm" class="collapse" data-bs-parent="#category5">.</div>
+                </div>
+            </div>
+           
+            <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead5">
+                History<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead6">
+                Plitics<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead7">
+                Literature<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+            </button>
+            <button type="button" class="btn btn-grey d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#demohead8">
+                Business<span class="badge"><img src="pic/bootstrap-icons/plus.svg" alt="menus"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="margin-top:0px" id="headicons">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success rounded" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <img src="pic/head.jpg" alt="myicoon" style="width:40px;" class="rounded-pill" id="headconan">
+                </a>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                    </ul> 
+                    <form class="d-flex rounded">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Search">
+                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/qr-code-scan.svg"></span>
+                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/mic.svg"></span>
+                            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/camera-fill.svg"></span>
+                            <span class="input-group-text bg-light"> <img src="pic/bootstrap-icons/search.svg" alt="search"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+        
+
+        <div class="list-group rounded">
+            <div id="headbar" >
+            
+                <ul class="nav nav-tabs" role="tablist" v-if="bookcate.length">
+                    <li class="nav-item" v-for="item of bookcate">
+                        <a class="nav-link" data-bs-toggle="tab" style="font-size:13px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" href="#item.id">{{item.name}}</a>
+                    </li>
+                </ul>
+            
+                <div class="tab-content">
+                    
+                        <div class="tab-pane container active"  v-for="item of bookcate" id="item.id">
+                            <h3></h3>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div id="mysitehead" class="mx-auto">
+                <h1 class="tagline text-center"><span>The Book</span>
+                <br><span id="demod" class="accent"></span><br><span>Recommend</span>
+                </h1>
+                <audio src="music/ussewa.mp3" playsong></audio>
+                <div class="btn-group btngroupfell rounded">
+                    <button class="play btnfell"><img src="pic/bootstrap-icons/play-circle.svg"> うっせぇわ</button> 
+                    <button class="pause btnfell"><img src="pic/bootstrap-icons/pause-circle.svg"></button>
+                </div>  
+            </div><hr>
+            
+            <div id="rowpic">
+                <div id="colomnpic">
+                    <img src="pic/nassim.jpg" style="width:100%">
+                    <img src="pic/soros.jpg" style="width:100%">
+                    <img src="pic/chenduxiu.jpg" style="width:100%">
+                </div>
+                <div id="colomnpic">
+                    <img src="pic/riemann.jgp.jpg" style="width:100%">
+                    <img src="pic/hushizhi.jpg" style="width:100%">
+                    <img src="pic/teachmath.jpg" style="width:100%">
+                </div>
+                <div id="colomnpic">
+                    <img src="pic/rando.jpg" style="width:100%">
+                    <img src="pic/boer.jpg" style="width:100%">
+                    <img src="pic/einstein.jpg" style="width:100%">
+                    
+                </div>
+                <div id="colomnpic">
+                    <img src="pic/feynman.jpg" style="width:100%">
+                    <img src="pic/minkowski.jpg" style="width:100%">
+                    <img src="pic/euler.jpg" style="width:100%">
+                </div>
+            </div><hr>
+
+            <div id="speical-sponsor" class="mx-auto">
+                <p style="text-align:center;font-size:13px;">Special Sponsor</p>
+                <a href="https://appwrite.io" target="_blank" rel="sponsored noopener">
+                    <img style="margin:-10px 0 2px 0" src="pic/appwrite.svg" alt="appwriter">
+                </a>
+                <p style="text-align:center;font-size:13px;">Open Source Firebase Alternative</p>
+            </div><hr>
+        
+
+            
+                <div  >
+                    <a id="website" href="https://github.com/" class="btn"><img id="websiteicon" src="pic/github.jpg" alt="github" style="position:relative;
+                        width: 54px;height: 54px ;border-radius: 20px;"></a>
+                    <a id="website" href="https://www.getbootstrap.com/" class="btn"><img id="websiteicon" src="pic/bootstrap.jpg" alt="bootstrap" style="position:relative;
+                        width: 54px;height: 54px ;border-radius: 20px;"></a>
+                    
+                    <a id="website" href="https://vuejs.org/" class="btn"><img id="websiteicon" src="pic/vuejs.jpg" alt="vuejs" style="position:relative;
+                        width: 54px;height: 54px ;border-radius: 20px;"></a>
+
+                    <a id="website" href="https://www.w3schools.com/" class="btn"><img id="websiteicon" src="pic/w3school.jpg" alt="w3chool" style="position:relative;
+                        width: 54px;height: 54px ;border-radius: 20px;"></a>
+                        
+                    <a id="website" href="https://www.freecodecamp.org/" class="btn"><img id="websiteicon" src="pic/freecode.jpg" alt="freecodecamp" style="position:relative;
+                        width: 54px;height: 54px ;border-radius: 20px;"></a>
+
+                    <a id="website" href="https://nodejs.org" class="btn"><img id="websiteicon" src="pic/nodejs.jpg" alt="node" style="position:relative;
+                        width: 54px;height: 54px ;border-radius: 20px;"></a>
+
+                    <a id="website" href="https://reactjs.org" class="btn"><img id="websiteicon" src="pic/reactjs.png" alt="react" style="position:relative;
+                    width: 54px;height: 54px ;border-radius: 20px;"></a>
+
+                    <a id="website" href="https://www.coursera.org" class="btn"><img id="websiteicon" src="pic/coursera.jpg" alt="coursera" style="position:relative;
+                        width: 54px;height: 54px ;border-radius: 20px;"></a>
+
+                    <a id="website" href="https://reactjs.org" class="btn"><img id="websiteicon" src="pic/zlibrary.jpg" alt="zlibrary" style="position:relative;
+                            width: 54px;height: 54px ;border-radius: 20px;"></a>
+                    
+                    <a id="website" href="https://en.wikipedia.org/" class="btn"><img id="websiteicon" src="pic/wikipedia.jpg" alt="wikipedia" style="position:relative;
+                        width: 54px;height: 54px ;border-radius: 20px;"></a>
+                    
+                    <a id="website" href="https://discordapp.com/" class="btn"><img id="websiteicon" src="pic/discord.jpg" alt="discord" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>
+
+                    <a id="website" href="https://www.meta.com" class="btn"><img id="websiteicon" src="pic/meta.jpg" alt="meta" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>  
+
+                    <a id="website" href="https://developer.mozilla.org/en-US" class="btn"><img id="websiteicon" src="pic/mozilla.jpg" alt="mozilla" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>  
+
+                    <a id="website" href="https://code.visualstudio.com/" class="btn"><img id="websiteicon" src="pic/vscode.jpg" alt="vscode" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>
+                    
+                    <a id="website" href="music.html" class="btn"><img id="websiteicon" src="pic/spotify.jpg" alt="mymusic" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>  
+
+                    <a id="website" href="shinomus.html" class="btn"><img id="websiteicon" src="pic/shino.jpg" alt="mymusic" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>  
+
+                    <a id="website" href="merrycoco/index.html" class="btn"><img id="healthcode" src="pic/health.jpg" alt="mycode" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a> 
+                </div><hr>
+        
+
+            <div id="boxreading" class="mx-auto">
+                <div class="card rounded-5" id="box">
+                    <img class="card-img-top" src="pic/surgeons.png" alt="nassim taleb">
+                    <div class="card-body">
+                        <h4 class="card-title"style="font-size:13px" ><strong>Surgeons Should Not Look Like Surgeons</strong></h4>
+                        <p  class="card-text" style="font-size:10px" >Literature doesn’t look like literature –Business plans are for suckers — Donaldo Hiring practitioners –the glory of bureaucracy–teach a professor how to deadlift...</p></div>
+                    
+                        <a type="button" data-bs-toggle="modal" href="#myreadmodal" class="btn btn-light btn-sm buttonstyle">see more</a>
+    
+                    
+                </div>
+                <div class="modal fade shadow-lg" id="myreadmodal">
+                    <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <a href="javascript:void(0)"  style="text-decoration:none;font-size:12px;font-weight:900;color:black">
+                                                <img src="pic/nassim.jpg" alt="myicoon" style="width:40px;" class="rounded-pill">Nassim Taleb
+                                    </a>    
+                                    <div class="float-end" >
+                                        <img src="pic/bootstrap-icons/twitter.svg">
+                                        <img src="pic/bootstrap-icons/facebook.svg">
+                                        <img src="pic/bootstrap-icons/linkedin.svg">
+                                        <img src="pic/bootstrap-icons/link-45deg.svg" alt="search">
+                                        <img src="pic/bootstrap-icons/bookmark.svg" alt="search">
+                                        <img class="" src="pic/bootstrap-icons/three-dots.svg">
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body" >
+                                <h4 class="modal-title" style="font-family: 'SOfia', sans-serif;font-size: 23px;">Surgeons Should Not Look Like Surgeons</h4><br>
+                                <p id="readtxt" style="font-family: 'Libre Baskerville',serif;
+                                font-size: 14px;">
+                                   <strong>Looking the Part</strong><br><br>
+    Say you had the choice between two surgeons of similar rank in the same department in some hospital. The first is highly refined in appearance; he wears silver-rimmed glasses, has a thin built, delicate hands, a measured speech, and elegant gestures. His hair is silver and well combed. He is the person you would put in a movie if you needed to impersonate a surgeon. His office prominently boasts an Ivy League diploma, both for his undergraduate and medical schools.<br><br>
+    
+    The second one looks like a butcher; he is overweight, with large hands, uncouth speech and an unkempt appearance. His shirt is dangling from the back. No known tailor in the East Coast of the U.S. is capable of making his shirt button at the neck. He speaks unapologetically with a strong New Yawk accent, as if he wasn’t aware of it. He even has a gold tooth showing when he opens his mouth. The absence of diploma on the wall hints at the lack of pride in his education: he perhaps went to some local college. In a movie, you would expect him to impersonate a retired bodyguard for a junior congressman, or a third-generation cook in a New Jersey cafeteria.<br><br>
+    
+    Now if I had to pick, I would overcome my suckerproneness and take the butcher any minute. Even more: I would seek the butcher as a third option if my choice was between two doctors who looked like doctors. Why? Simply the one who doesn’t look the part, conditional of having made a (sort of) successful career in his profession, had to have much to overcome in terms of perception. And if we are lucky enough to have people who do not look the part, it is thanks to the presence of some skin in the game, the contact with reality that filters out incompetence, as reality is blind to looks.<br><br>
+    
+    When the results come from dealing directly with reality rather than through the agency of commentators, image matters less, even if it correlates to skills. But image matters quite a bit when there is hierarchy and standardized “job evaluation”. Consider the chief executive officers of corporations: they not just look the part, but they even look the same. And, worse, when you listen to them talk, they will sound the same, down to the same vocabulary and metaphors. But that’s their jobs: as I keep reminding the reader, counter to the common belief, executives are different from entrepreneurs and are supposed to look like actors.<br><br>
+    
+    Now there may be some correlation between looks and skills; but conditional on having had some success in spite of not looking the part is potent, even crucial, information.<br><br>
+    
+    So it becomes no wonder that the job of chief executive of the country, that is, the president, was once filled by a former actor, Ronald Reagan. Actually, the best actor is the one nobody realizes is an actor: a closer look at the record and the activity shows that Barack Obama was even more of an actor: a fancy Ivy-League education combined with a liberal reputation is compelling as an image builder. (In fact much as President Trump has going for him is that he doesn’t act as a president).<br><br>
+    
+    Much has been written about the millionaire next door: the person who is actually rich, on balance, doesn’t look like the person you would expect to be rich, and vice versa. About every private banker is taught to overcome the image as it doesn’t match the bottom line and avoid chasing people who drive Ferraris at country clubs. I just recently experienced its manifestation: as I am writing these lines: a neighbor in my ancestral village and (like almost everyone there, a remote relative), who led a modest but comfortable life, ate food he grew by himself, drank his own pastis (arak), that sort of thing, left an estate of a hundred million dollars, a hundred times what one would have expected him to leave.<br><br>
+    
+    So consider next time you randomly pick a novel, to avoid the one with the author photo representing a pensive man with an ascot standing behind wall-to-wall bookshelves. Or the well-spoken person who gives what is known as a TED talk.<br><br>
+    
+    Next, we will get deeper into the following:<br>
+    
+    In any type of activity or business divorced from the direct filter of skin in the game, the great majority of people know the jargon, play the part, are intimate with the cosmetic details, but are clueless about the subject.<br><br>
+    
+    <strong>Green Lumber Fallacy</strong><br>
+    The idea is Lindy compatible. Don’t think that beautiful apples are tasteful, goes the Latin saying: Non teneas aurum totum quod splendet ut aurum/nec pulchrum pomum quodlibet esse bonum. To the common “all that glitters is not gold”, the proverb adds the more subtle one that not all apples taste good –something it has taken consumers half a century to figure out, even then, as consumers have been continuously fooled by the aesthetics of produce.<br><br>
+    
+    An expert rule is in my business never hire a well-dressed trader. But it goes beyond:<br>
+    
+    Hire the successful trader, conditional on a satisfactory track record, whose details you can understand the least.<br><br>
+    
+    Not the most: the least. Why so?<br>
+    
+    This point I’ve introduced in Antifragile under the name green lumber fallacy. A fellow made in fortune in green lumber without knowing what appears to be essential details about the product he traded –he wasn’t aware that green lumber stood for freshly cut wood, not lumber that was painted green. Meanwhile, by contrast, the person who related the story went bankrupt while knowing every intimate detail about the green lumber, which includes the physical, economic, and other aspects of the commodity. The fallacy is that what one may need to know in the real world does not necessarily match what one can perceive through intellect: it doesn’t mean that details are not relevant, only that those we tend (IYI-style) to believe are important constitute a distraction away from more central attributes to the price mechanism. I put the green lumber fallacy as part of the Soviet-Harvard delusion, though it appears that the Soviet were much more bottom up than the Harvard approach.<br><br>
+    
+    In any activity, hidden details are only revealed via Lindy-style experience.<br><br>
+    
+    Another aspect:<br>
+    
+    What can be phrased and expressed in a clear narrative that convinces suckers will be a sucker trap.<br><br>
+    
+    My friend Terry B. who taught an investment class invited two speakers. One looked the part of the investment manager, down to a T: tailored clothes, expensive watch, shiny shoes, and clarity of exposition. He also talked big, projecting the type of confidence you would desire in an executive. The second looked closer to our butcher-surgeon and was totally incomprehensible; he even gave the impression that he was confused. Now when Terry asked the students who, of the two they believed was more successful, they didn’t even get close. The first, not unexpectedly, was in the equivalent of the soup kitchen for that business; the second was at least a centimillionaire.<br><br>
+    
+    The late Jimmy Powers, a die-hard New York Irishman with whom I worked in an investment bank early in my trading career, was successful in spite of being a college dropout, with the background of a minor Brooklyn street-gangster. He would discuss our trading activities in meetings with such sentences as: “we did this and then did that, badaboom, badabing, and then it was all groovy”, to an audience of extremely befuddled executives who didn’t mind not understanding what he was talking about, so long as our department were profitable. Remarkably, after a while, I got to effortlessly understand what Jimmy meant. I also learned, in my early twenties, that the people you understood the most were necessarily those were the bull***ters.<br><br>
+    
+    <stong>Best Dressed Business Plan</stong><br>
+    Literature should not look like literature. The author Georges Simenon worked as a teenager in journalism as an assistant to the famous female French writer Colette; she taught him to resist the idea of putting imperfect subjunctives and references to zephyrs, rhododendrons, and firmaments in his text –the kind of stuff one does when waxing literary. Simenon took the advice to the extreme: in a style equivalent to that of, say, Graham Greene, his style is stripped to the core, and as a result, the words do not stand in the way of conveying the atmosphere –you feel wetness penetrating your shoes just reading his accounts of Maigret spending endless times in the Parisian rain; it is as if the central character of his novel is the background.<br><br>
+    
+    Likewise, there prevails the illusion that businesses work by business plans and science by funding. This is strictly not true: a business plan is a useful narrative for those who want to convince a sucker. It works because firms in the entrepreneurship business make most of their money packaging companies and selling them; it is not easy to sell without some strong narrative. But for a real business, something that should survive on its own, rather than a fund-raising scheme, business plans and funding work backwards. At the time of writing, most big recent successes (Microsoft, Apple, Facebook, Google) started organically by people with skin and soul in the game and grew –if they had recourse to funding, it was to allow the managers to cash out rather than the prime source of creation. You don’t create a firm by creating a firm; nor do you do science by doing science.<br><br>
+    
+    <strong>A “Beautiful” Paper</strong><br>
+    
+<strong>How economists should dress</strong><br>
+    Which brings me to social science. I have in many instances quickly jotted down ideas on a piece of paper, along with mathematical proofs, and posted them somewhere, planning to get them published. No fluff or the ideas-free verbose circularity of social science papers. In some fake fields like economics, that is one that is ritualistic and dominated by citation rings, I discovered that everything is in the presentation. So the criticism has never been about the content, but rather the presentation. There is a certain language one needs to learn through a long investment, and papers are just iterations around that language. So I can safely say that almost all papers in economics are substance free or fake, particularly those published in “prestigious” journals.<br><br>
+    
+    Never hire an academic in the complex domain, unless the function is to partake of the rituals of writing papers or taking exams.<br><br>
+    
+    Which brings us to the attributes of scientism. For it was not just some presentation that mattered to these idiots. It is unnecessary complication.<br><br>
+    
+    Mediterranean societies are traditionally ones in which the highest ranking person is the one with skin in the game, the risk taker. Death on the battlefield remained the highest honor. If anything characterizes Greek culture, it is such skin in the game. And if anything characterizes today’s America, it is economic risk taking, thanks to a happy transfer of martial values to business and commerce in Anglo-Saxon society –remarkably, traditional Arabic culture also puts the same emphasis on the honor of economic risk-taking. But history shows that there were –are still are –societies in which the intellectual was at the top. The Hindus held the Brahman to be first in the hierarchy, the Celts had the druids, the Egyptians had their scribes, and the Chinese had for a relatively brief time the scholar. Let me add post-war France. But there is a remarkable similarity to the way these intellectuals held power and separated themselves from the rest: through complex, extremely elaborate rituals, mysteries that stay within the caste, and an overriding focus on the cosmetic.<br><br>
+    
+    Even beyond, when examining the “normal” warrior-run or doer-run societies, the class of intellectuals within them is all about rituals: without pomp and rituals, the intellectual is just a talker, that is pretty much nothing. Consider the bishop in my parts, the Greek-Orthodox church: it’s a show of dignity. A bishop on rollerblades would not be a bishop. And, as we will see in Chapter x, there is nothing wrong, even something beneficial with the decorative if it remains what it is, decorative –science and business are not to be decorative.<br><br>
+    
+    <strong>II</strong><br>
+    Next we examine the following points<br>
+    
+    Just as the slick fellow in a Ferrari looks richer than the rumpled centimillionaire, scientism looks more scientific than real science.<br><br>
+    
+    <strong>True intellect should not appear to be intellectual</strong><br><br>
+    
+    <strong>The Gordian Knot</strong><br>
+    Never pay for complexity of presentation when all you need is results.<br>
+    
+    
+    Alexander the Megalos was once called to solve the following in the Phrygian city of Gordium (as usual with Greek stories, in modern day Turkey). When he entered Gordium, he found an old wagon, its yoke tied with a multitude of knots, all so tightly entangled that it was impossible to figure out how they were fastened. An oracle had declared that he who would untie the knot would rule all of what was then called “Asia”, that is Asia minor, the Levant, and the Middle East.<br><br>
+    
+    After wrestling with the knot, the Megalos drew back from the lump of gnarled ropes, then made a proclamation that it didn’t matter for the prophecy how the tangle was to be unraveled. He then drew his sword and, with a single stroke, cut the knot in half.<br><br>
+    
+    No “successful” academic would ever follow such policy. And no Intellectual Yet Idiot: for instance it took medicine a long time to realize that, when a patient shows up with a headache, it much better to give him aspirin or recommend a good night sleep than do brain surgery, although the latter appears to be more “scientific”.<br><br>
+    
+    <strong>Overintellectualization of Life</strong><br>
+    Gigerenzer and Brighton contrast the approaches of the “rationalistic” school (in brackets as there is little that is rational in these rationalists) and that of the heuristic one, in the following example on how a baseball player catches the ball by Richard Dawkins:<br><br>
+    
+    Richard Dawkins (…) argues that “He behaves as if he had solved a set of differential equations in predicting the trajectory of the ball. At some subconscious level, something functionally equivalent to the mathematical calculations is going on”.<br><br>
+    
+    (…) Instead, experiments have shown that players rely on several heuristics. The gaze heuristic is the simplest one and works if the ball is already high up in the air: Fix your gaze on the ball, start running, and adjust your running speed so that the angle of gaze remains constant .<br><br>
+    
+    This error by the science entertainer Richard Dawkins error generalizes to, simply, overintellectualizing humans in their responses to all manner of natural phenomena, rather than accepting the role of a collection of mental heuristics used for specific purposes. The baseball player has no clue about the exact heuristic, but he goes with it –otherwise he would lose the game to another nonintellectualizing competitor. Likewise religious “beliefs” are simply mental heuristics that solve a collection of problems –without the agent really knowing how –and lead to human activity; for solving the equations of the world in order to make a decision isn’t a skill we humans can aspire to have –it is computationally impossible. What we can rationally do is neutralize some aspects of these heuristics, defang them so to speak.<br><br>
+    
+    <strong>The Business of Intervention</strong>
+    <br>
+    Some rules. People who have always operated without skin in the game (or without their skin in the right game) seek the complicated, centralized, and avoid the simple like the pest. Practitioners on the other hand have opposite instincts, looking for the simplest heuristics.<br><br>
+    
+    People who are bred, selected, and compensated to find complicated solutions do not have an incentive to implement simplified ones<br><br>
+    
+    And it gets more complicated as the remedy has itself a skin in the game problem<br><br>
+    
+    This is particularly acute in the meta-problem when the solution is about solving this very problem<br><br>
+    
+    In other words, Many problems in society come from the interventionism of people who sell complicated solutions because that’s what their position and training invites them to do. There is absolutely no gain for someone in such a position to propose something simple: you are rewarded for perception not results. They pay no price for the side effects that grow nonlinearly with such complications.<br><br>
+    
+    But also when it comes to solutions that are profitable to technologists.<br><br>
+    
+    <strong>Gold and Rice</strong><br>
+    Now, indeed we know by instinct that brain surgery is not more “scientific” than aspirin, no more than flying the forty or so miles between New York JFK and Newark airports represent “efficiency” although there is more technology involved. But we don’t easily translate into other domains and remain victims of what is called scientism, which is to science what a Ponzi scheme is to an investment, or what an advertisement or propaganda are to a genuine scientific communication. You magnify the cosmetic attributes.<br><br>
+    
+    Consider the story of the genetically modified Golden Rice. Some firms discovered the sucker problem of people’s ability to fall for (lucrative) science as a savior of mankind. There has been a problem of malnutrition and nutrient deficiency in many developing countries, which my collaborators Yaneer Bar Yam and Joe Norman attribute to a simple and very straightforward transportation issue. Simply, we waste more than a third of our food supply and the gains from simple improvement in the distribution far outweigh those from modification of supply. Simply consider that close to eighty or eighty five percent of the cost of a tomato will be attributed to transportation, storage, waste (from the rotting of unsold inventories), rather than the cost at the farmer level.<br><br>
+    
+    Now the “techies” saw an angle of intervention. First, you find pictures of starving children and show their pictures to elicit sympathy and prevent further discussion –anyone who argues in the presence of dying children is a heartless a**hole. Second you make it look that any critic of your method is arguing against saving the children. Third, you propose some scientific looking technique that is lucrative to you and, should it cause a catastrophe or blight, you are insulated from the long term effects. Fourth, you enlist the journalists and the useful idiots, people who hate things that appear “unscientific” in their unscientific eyes. Fifth, you create a smear campaign to harm the reputation of researchers who, not having f*** you money, are very vulnerable to the slightest blemish to their reputation.<br><br>
+    
+    The technique in question consists in genetically modifying rice to have the grains include vitamins.<br><br>
+    
+    My colleagues and I made an effort to show the following, which is a criticism of the method in general. First, transgenics, that is the type of genetic modifications thus obtained, were not analytically in the same category as the cross breeding of plants and animals that have characterized human activities since husbandry –say potatoes or mandarin oranges. We skipped complexity classes and the effects on the environment were not foreseeable –nobody studied the interactions. We even showed that there was a patent increase in systemic risk. Second, there was no proper risk study and the statistical methods in the papers in support of the argument were flawed. Third, we invoked the principle of simplicity which was called antiscience. Why don’t we give these people rice and vitamins separately? After all we don’t have genetically modified coffee that has milk with it. Fourth we were able to show that GMOs brought a bevy of hidden risk to the environment, in terms of higher use of pesticide which killed the microbiome.<br><br>
+    
+    The first result was an organized smear campaign Close to 1500 messages were sent to my university, which were tracked to Ketchum the public relation firm that represents Montanto. It was not just ineffectual, but brought more attention to our work, particularly among people who had interest in complexity theory and systemic risk management. Needless to say that people who engage in smear campaign are not often the smartest and toughest kids on the block –did your most intelligent or tough classmates in school dream of become smear-campaigners when they grew up?<br><br>
+    
+    I realized soon later that, owing to the minority rule (Chapter x), there was no point to continue. GMOs lost simply because a minority of intelligent and intransigent people stood against them.<br>
+    
+    <strong>The Compensation</strong><br>
+    Simply, the minute one is judged by others rather than by reality, the mechanism becomes warped as follows. Firms that haven’t gotten bankrupt yet have something called personnel departments, with people trained into a discipline of dealing with other peoples. So there are metrics used and “evaluation forms” to fill.<br><br>
+    
+    The minute one has evaluation forms distortions occur. Recall that in The Black Swan I had to fill my evaluation form asking “how many percent of days one is profitable”, encouraging traders to make steady money at the expense of hidden risks of Black Swans, consequential losses. Russian Roulette allows you to make money 5 times out of six. This has bankrupted banks as banks lose less than one in 100 quarters, but then they lose more than they ever made. My declared approach was try to make money infrequently. I tore the evaluation form in front of the big boss and they left me alone.<br><br>
+    
+    Now the mere fact than an evaluation causes you to be judged, not by the end results, but by some intermediary metric that invites you to look sophisticated, bring that distortion.<br><br>
+    
+    <strong>Education as Luxury Good</strong><br>
+    Ivy League Universities are becoming in the eyes of the new Asian upper class the status luxury good. Harvard is like a Vuitton bag and a Cartier Watch. It is a huge drag on the middle class who have been plowing an increased share of their savings into educational institutions, transferring their money to bureaucrats, real estate developers, tenured professors of some discipline that would not otherwise exist (gender studies, comparative literature, or international economics), and other parasites. In the United States, we have a buildup of student loans that automatically transfer to these rent extractors. In a way it is no different from racketeering: One needs a decent university “name” to get ahead in life. But we have evidence that collectively society doesn’t advance with organized education, rather the reverse: the level of (formal) education in a country is the result of wealth.<br><br>
+    
+    <strong>A BS detection Heuristic.</strong><br>
+    The heuristic here would be to use education in reverse: hire, conditional on equal set of skills, the person with the least label-oriented education. It means that the person had to succeed in spite of the credentialization of his competitors and overcome more serious hurdles. In addition, people who didn’t go to Harvard are easier to deal with in real life.<br><br>
+    
+    You can tell if a discipline is BS if the degree depends severely on the prestige of the school granting it. I remember when I applied to MBA programs being told that anything outside the top 10 or 20 would be a waste of time. On the other hand a degree in mathematics is much less dependent on the school (conditional on being above a certain level, so the heuristic would apply to the difference between top 10 and top 2000 schools).
+    <br><br>
+    The same applies to research papers. In math and physics, a result posted on arXiv (with a minimum hurdle) is fine. In low quality fields like academic finance (where almost all academics are charlatans and all papers some form of complicated storytelling), the “prestige” of the journal is the sole criterion.<br>
+    
+    <strong>Real Gyms Don’t Look Like Gyms</strong><br>
+    This education labeling –which provides a lot of cosmetic things but most certainly misses something essential about antifragility and true learning –is reminiscent of gyms. People are impressed with expensive equipment, fancy, complicated, multicolored, meant to look as if it belonged to space ships. It is made to appear maximally sophisticated and scientific –but remember that what looks scientific is usually scientism not science. As with label universities, you pay quite a bit of money, largely for the benefit of the real estate developer. Yet people into strength training (those who are actually strong across many facets of real life) know that users of these machines gain no strength beyond the initial phase –and have known that for at least two and a half millennia. In fact, by having recourse to complicated equipment that typically target very few muscles, regular users will eventually pear-shape and get weaker over time, with skills that do not transfer outside of the very machine that they trained on. The equipment may have some use in a hospital or a rehabilitation program, not for regular people. For, on the other hand, the simpler barbell equipment (a metal bar with two weights on both ends) is the only one that gets you to recruit your entire body for exercises –and it is the simplest and cheapest to get. All you need is to learn the safety skills to move off the floor the heavier piece of metal you can lift while avoiding injury.<br><br>
+    
+    What you want is shoes to run outside when you can (and perhaps some pants that don’t make you look ridiculous), and a barbell with weights. As I am writing these lines I am checking the brochure of a fancy hotel where I will be spending the next two days. The brochure was put together by some MBA: it is glossy, shows all the machines and the jars of the color-rich juices they give you to “improve” your health. They even have a swimming pool; but no barbell.<br><br>
+                                </p>
+                                <div class="float-start" >
+                                    <img src="pic/bootstrap-icons/hand-thumbs-up.svg">8.1k
+                                </div>
+                                <div class="float-end">
+                                    <img src="pic/bootstrap-icons/box-arrow-up.svg">
+                                    <img src="pic/bootstrap-icons/bookmark-fill.svg">
+                                    <img class="" src="pic/bootstrap-icons/three-dots.svg">
+                                </div> 
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><hr>
+
+        <div id="slidepic" class="carousel slide cardconan my-3 rounded"  data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slidepic" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slidepic" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slidepic" data-bs-slide-to="2"></button>
+             </div>
+
+             <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="pic/first.jpg" alt="firstslide" style="height:350px;width:100%" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="pic/second.jpg" alt="secondslide" style="height:350px;width:100%" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="pic/third.jpg" alt="thirdslide" style="height:350px;width:100%" class="d-block w-100">
+                </div>
+             </div>
+
+             <button class="carousel-control-prev" type="button" data-bs-target="#slidepic" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#slidepic" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+             </button>
+        </div><br/>
+
+        <div class="card shadow-lg rounded mx-auto" style="width:350px"  id="cardbook">
+            <div class="card-header justify-content-between" style="line-height:1px;margin-bottom:-15px;margin-top: 0px;">
+                <p><img src="pic/nassim.jpg" alt="myicoon" style="width:40px;" class="rounded-pill"> <strong><span style="font-size:10px">nassim taleb</span> </strong>
+                <a href="#" class="btn btn-primary right" >View Profile</a></p>
+            </div>
+            <img class="card-img-top" src="pic/conan.jpg" alt="bookicon" >
+            <div class="card-body" style="line-height:1px">
+            <a href="#" >View more about this book</a><hr style="margin-top:10px;margin-bottom:0px"/>
+            <a href="#" class="btn btn-sm d-flex justify-content-between align-items-right">
+                <img src="pic/bootstrap-icons/heart.svg"><img src="pic/bootstrap-icons/chat.svg"><img src="pic/bootstrap-icons/upload.svg">
+                <span class="badge rounded-pill justify-content-left"><img src="pic/bootstrap-icons/bookmark.svg"> </span>
+            </a>
+            <strong>7,985 likes</strong><hr style="margin-top:10px;margin-bottom:0px" />
+            <div class="input-group" >
+            <input type="text" class="form-control form-control-sm" placeholder="Add a comment...">
+            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/camera.svg"> </span>
+            </div>
+            </div>
+        </div>
+       
+        
+
+    
+        <div class="pt-3 my-3 text-bg-success rounded cardconan" id="pagetitle">
+            <h1 class="display-1 text-center" :class="{red: isRed}" @click="toggleRed" ><strong></strong>10 Nastaa Book Recommendations!</strong><small>You Can't Miss</small></h1>
+            
+                <blockquote class="blockquote">
+                    <p class="lead text-break">“But life is very short and anxious for those who forget the past, neglect the present, and fear the future.” </p>
+                    <footer class="blockquote-footer text-end text-capitalize text-white">Seneca, On the Shortness of Life</footer>
+                </blockquote>
+                <p>Use <kbd>ctrl + c</kbd>to copy the book</p>
+                <div class="alert alert-warning alert-dismissible fade show">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <strong>WELLCOM TO THIS SITE!</strong>You could close this alert.
+                </div>
+    </div>
+        
+        <div class="row shadow-lg my-3 rounded mx-auto" id="bookintro">
+            <div class="col-sm-3  text-bg-light rounded">
+                <h1>BOOK</h1>
+                <ul class="list-unstyled">
+                    <li>
+                        <abbr title="The Scope and Limits of Computational Psychology" class="initialism"> 
+                            <div class="spinner-grow spinner-grow-sm text-success"></div>Mind Doesn't Work That Way
+                         <span class="badge bg-danger rounded-pill">New</span>
+                        </abbr>
+                    </li>
+                        <ul class="list-unstyled">
+                            <li>
+                                Jerry A.Fodor<br/>
+                                <div id="app">
+                                <button type="button" @click="increment" class="btn btn-outline-success btn-sm">
+                                    <img src="pic/bootstrap-icons/hand-thumbs-up.svg" alt="handup">{{count}}</button>
+                                </div>
+                            </li>
+                            <li>
+                                Recommendation Index:
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:75%">75%</div>
+                                </div>
+                            </li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="col-sm-9 text-bg-success rounded">
+                <h1>Intruduction</h1>
+                <ul class="list-unstyled">
+                    <li>
+                        <blockquote class="blockquote">
+                        <p class="lead text-break text-info-60">
+                            "Horribly written (that is Fodor's charm after all) but his argumentation is so ferocious that he ends up loud & clear." 
+                            <img src="pic/minddwtw.jpg" class="img-thumbnail mx-auto d-block img-fluid" alt="mind doesn't work that way" width="60" height="43">
+                            <a href="#" type="button" class="btn btn-outline-warning btn-sm"><span class="spinner-border spinner-border-sm"></span>BUY</a>
+                        </p>
+                        <footer class="blockquote-footer text-end text-capitalize text-warning">From Nassim Table</footer>
+                        </blockquote>
+                        
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="table-responsive-sm container cardconan my-3 rounded"  id="tablebook">
+            <table class="table table-hover table-striped">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Booktitle</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Black Swan</td>
+                        <td>Nichola Nassim Table</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+       
+
+
+        <ul class="pagination pagination-sm justify-content-center" style="margin:20px 0" id="pagenumber">
+            <li class="page-item"><a class="page-link" href="#" style="float: left;" v-for="item of pagenum">{{item}}</a></li>  
+        </ul>
+        
+        <svg class="bi" width="32" height="32" fill="currentColor">
+            <use xlink:href="pic/bootstrap-icons/heart-fill.svg"/>
+          </svg>
+          <svg class="bi" width="32" height="32" fill="currentColor">
+            <use xlink:href="pic/bootstrap-icons/toggles.svg"/>
+          </svg>
+          <svg class="bi" width="32" height="32" fill="currentColor">
+            <use xlink:href="pic/bootstrap-icons/alipay.svg"/>
+            
+          </svg>
+          <hr>
+        <ul class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="https://discord.gg/vHgjYW2z"  target="_blank">
+            <img src="pic/bootstrap-icons/discord.svg" class="mx-auto" alt="mydiscord" width="25" height="25">
+            <a></li>
+            <li class="breadcrumb-item"><a href="https://twitter.com/nntaleb" target="_blank">
+            <img src="pic/bootstrap-icons/twitter.svg" class="mx-auto" alt="mytwitter" width="25" height="25">
+            <a></li>
+            <li class="breadcrumb-item"><a href="https://github.com/freetoliv" target="_blank">
+            <img src="pic/bootstrap-icons/github.svg" class="mx-auto" alt="mygithub" width="25" height="25">
+            <a></li>
+            <li class="breadcrumb-item"><a href="#" class="link-info" target="_blank">
+            <img src="pic/bootstrap-icons/line.svg" class="mx-auto"  alt="myline" width="25" height="25">
+            <a></li>
+            </ul>
+    </div>
+    
+    <div class="container">
+        <h5 style="text-align:center">Subscribe to our weekly newsletter</h5>
+        <div class="input-group">
+            <form method="post" class="mx-auto">
+                <input class="input form-control-lg" id="memberemail" name="member[email]" type="email" placeholder="Email address"  required>
+                <input class="btn" id="membersubmit" name="membersubscribe" type="submit" value="subscribe" style="margin-left:-87px; margin-bottom:6px;padding:5px;background-color:#f02e65;color:white">  
+            </form>
+        </div>
+        <p style="text-align:center">you can read the previous issues and listen<br> to our podcast at<a href="#" target="_blank"> rushi.org</a>, You may <br>also go social at <a href="#">Twitter</a>, or join our home at <a href="#">Discord</a>
+        .</p><br><hr><br>
+        
+    </div>
+
+    <script>
+
+    </script>
+    <script>
+
+        var i = 0;
+        var txt = ['The Book', 'Rushi', 'Recommed'];
+        var speed = 500;
+
+        function typeWriter() {
+        if (i < txt[1].length) {
+        document.getElementById("demod").innerHTML += txt[1].charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+     
+    </script>
+    
+        
+
+
+    <script type="module">
+        import {createApp} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+        createApp({
+            data() {
+                return {
+                    count: 0
+                }
+            },
+
+        methods: {
+            increment() {
+                this.count--
+            }
+        },
+
+        mounted() {
+            console.log(this.count)
+            this.increment()
+            this.count = 338949
+        },     
+     }).mount('#app')
+    
+    createApp({
+        data() {
+            return {
+                isRed: false,
+                color: 'white',
+            }
+        },
+
+        methods: {
+            toggleRed() {
+                this.isRed = !this.isRed
+            },
+            toggleColor() {
+                this.color = this.color === 'white'? 'red' : 'white' 
+            }
+        }
+    }).mount('#pagetitle')
+
+    createApp({
+        data() {
+            return {
+                bookcate: [
+                    { id: 1, name:'Mathematic'}, {id: 2, name: 'History'}, {id: 3, name: 'Economy'} ,  {id: 4, name:'Philosophy'}, {id: 5, name: 'Bussiness'},  {id: 6, name: 'Computer'}, {id: 7, name: 'Medical'}, {id: 8, name: 'Medical'}, {id: 9, name: 'Politics'}, {id: 10, name: 'Literature'}, {id: 11, name: 'More'}
+                ]
+            }
+        }
+    }).mount('#headbar')
+
+    createApp({
+        data() {
+            return {
+                pagenum: ['❮', 1, 2, 3, 4, 5, 6, 7, 8, 9, '❯'],
+            }
+        }
+    }).mount('#pagenumber')
+
+    
+
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltiplist =tooltipTriggerList.map(function (tooltipTriggerE1){
+        return new bootstrap.Tooltip(tooltipTriggerE1)
+    })
+
+    document.querySelector(".play").onclick = event => {
+        document.querySelector("[playsong]").play()
+    }
+    document.querySelector(".pause").onclick = event => {
+        document.querySelector("[playsong]").pause()
+    }
+
+    var video = document.getElementById("myVideo");
+    var bttn = document.getElementById("myBtn");
+
+    function myFunction() {
+        if(video.paused) {
+            video.play();
+            bttn.innerHTML = "Pause";
+        } else{
+            video.pause();
+            bttn.innerHTML = "Play";
+        }
+    }
+
+    function chargebattery() {
+        var a;
+        a = document.getElementById("batterys");
+        a.innerHTML = "&#xf244;";
+        a.style.color = "red";
+        setTimeout(function () {
+            a.innerHTML = "&#xf243;";
+            a.style.color = "darkred";
+        }, 1000);
+        setTimeout(function () {
+            a.innerHTML = "&#xf242;";
+            a.style.color = "yellow";
+        }, 2000);
+        setTimeout(function () {
+            a.innerHTML = "&#xf241;";
+            a.style.color = "green";
+        }, 3000);
+        setTimeout(function () {
+            a.innerHTML = "&#xf240;";
+            a.style.color = "black";
+        }, 5000);
+    }
+    chargebattery();
+    setInterval(chargebattery, 5000);
+
+    
+   </script>
+    
+ 
+    
+</body>
+<footer class="text-center" style="font-size:10px">Released under the <strong>MIT License</strong><br/>
+             Copyright <img src="pic/bootstrap-icons/c-circle.svg" style="width:8px;height:8px" alt="c"> 1999-2099 RuShi
+</footer>
 </html>
