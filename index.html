@@ -403,63 +403,23 @@
         
 
             
-                <div  >
-                    <a id="website" href="https://github.com/" class="btn"><img id="websiteicon" src="pic/github.jpg" alt="github" style="position:relative;
+                <div id="smallapp" style="float:left" >
+                    <div  v-for="site of sitecase" >
+                    <a style="float:left" id="website" v-bind:href="site.weburl" class="btn"><img id="websiteicon" v-bind:src="site.icons" v-bind:alt="site.altitle" style="position:relative;
                         width: 54px;height: 54px ;border-radius: 20px;"></a>
-                    <a id="website" href="https://www.getbootstrap.com/" class="btn"><img id="websiteicon" src="pic/bootstrap.jpg" alt="bootstrap" style="position:relative;
-                        width: 54px;height: 54px ;border-radius: 20px;"></a>
-                    
-                    <a id="website" href="https://vuejs.org/" class="btn"><img id="websiteicon" src="pic/vuejs.jpg" alt="vuejs" style="position:relative;
-                        width: 54px;height: 54px ;border-radius: 20px;"></a>
-
-                    <a id="website" href="https://www.w3schools.com/" class="btn"><img id="websiteicon" src="pic/w3school.jpg" alt="w3chool" style="position:relative;
-                        width: 54px;height: 54px ;border-radius: 20px;"></a>
-                        
-                    <a id="website" href="https://www.freecodecamp.org/" class="btn"><img id="websiteicon" src="pic/freecode.jpg" alt="freecodecamp" style="position:relative;
-                        width: 54px;height: 54px ;border-radius: 20px;"></a>
-
-                    <a id="website" href="https://nodejs.org" class="btn"><img id="websiteicon" src="pic/nodejs.jpg" alt="node" style="position:relative;
-                        width: 54px;height: 54px ;border-radius: 20px;"></a>
-
-                    <a id="website" href="https://reactjs.org" class="btn"><img id="websiteicon" src="pic/reactjs.png" alt="react" style="position:relative;
-                    width: 54px;height: 54px ;border-radius: 20px;"></a>
-
-                    <a id="website" href="https://www.coursera.org" class="btn"><img id="websiteicon" src="pic/coursera.jpg" alt="coursera" style="position:relative;
-                        width: 54px;height: 54px ;border-radius: 20px;"></a>
-
-                    <a id="website" href="https://reactjs.org" class="btn"><img id="websiteicon" src="pic/zlibrary.jpg" alt="zlibrary" style="position:relative;
-                            width: 54px;height: 54px ;border-radius: 20px;"></a>
-                    
-                    <a id="website" href="https://en.wikipedia.org/" class="btn"><img id="websiteicon" src="pic/wikipedia.jpg" alt="wikipedia" style="position:relative;
-                        width: 54px;height: 54px ;border-radius: 20px;"></a>
-                    
-                    <a id="website" href="https://discordapp.com/" class="btn"><img id="websiteicon" src="pic/discord.jpg" alt="discord" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>
-
-                    <a id="website" href="https://www.meta.com" class="btn"><img id="websiteicon" src="pic/meta.jpg" alt="meta" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>  
-
-                    <a id="website" href="https://developer.mozilla.org/en-US" class="btn"><img id="websiteicon" src="pic/mozilla.jpg" alt="mozilla" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>  
-
-                    <a id="website" href="https://code.visualstudio.com/" class="btn"><img id="websiteicon" src="pic/vscode.jpg" alt="vscode" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>
-                    
-                    <a id="website" href="music.html" class="btn"><img id="websiteicon" src="pic/spotify.jpg" alt="mymusic" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>  
-
-                    <a id="website" href="shinomus.html" class="btn"><img id="websiteicon" src="pic/shino.jpg" alt="mymusic" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a>  
-
-                    <a id="website" href="healthco.html" class="btn"><img id="healthcode" src="pic/health.jpg" alt="mycode" style="position:relative;width: 54px;height: 54px ;border-radius: 20px;"></a> 
+                    </div>
                 </div><hr>
-        
+                    
 
             <div id="boxreading" class="mx-auto">
-                <div class="card rounded-5" id="box">
-                    <img class="card-img-top" src="pic/surgeons.png" alt="nassim taleb">
+                <div class="card rounded-3" id="box">
+                    <img class="card-img-top rounded-3" src="pic/surgeons.png" alt="nassim taleb">
                     <div class="card-body">
-                        <h4 class="card-title"style="font-size:13px" ><strong>Surgeons Should Not Look Like Surgeons</strong></h4>
-                        <p  class="card-text" style="font-size:10px" >Literature doesn’t look like literature –Business plans are for suckers — Donaldo Hiring practitioners –the glory of bureaucracy–teach a professor how to deadlift...</p></div>
+                        <h4 class="card-title"style="font-size:13px;color:black" ><strong>Surgeons Should Not Look Like Surgeons</strong></h4>
+                        <p  class="card-text" style="font-size:10px;color:black" >Literature doesn’t look like literature –Business plans are for suckers — Donaldo Hiring practitioners –the glory of bureaucracy–teach a professor how to deadlift...</p></div>
                     
                         <a type="button" data-bs-toggle="modal" href="#myreadmodal" class="btn btn-light btn-sm buttonstyle">see more</a>
-    
-                    
-                </div>
+                    </div>
                 <div class="modal fade shadow-lg" id="myreadmodal">
                     <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
@@ -892,6 +852,17 @@
             }
         }
     }).mount('#pagenumber')
+    
+
+    createApp({
+        data() {
+            return {
+                sitecase: [
+                    {weburl:'healthco.html', icons:'pic/health.jpg', altitle:'mycode'}, {weburl:'shinomus.html', icons:'pic/shino.jpg', altitle:'mymusic'},{weburl:'music.html', icons:'pic/spotify.jpg', altitle:'mymusic'},{weburl:'https://code.visualstudio.com/', icons:'pic/vscode.jpg', altitle:'vscode'},{weburl:'https://developer.mozilla.org/en-US', icons:'pic/mozilla.jpg', altitle:'mozilla'},{weburl:'https://www.meta.com', icons:'pic/meta.jpg', altitle:'meta'},{weburl:'https://discordapp.com/', icons:'pic/discord.jpg', altitle:'discord'},{weburl:'https://en.wikipedia.org/', icons:'pic/wikipedia.jpg', altitle:'wikipedia'},{weburl:'https://reactjs.org', icons:'pic/zlibrary.jpg', altitle:'zlibrary'},{weburl:'https://www.coursera.org', icons:'pic/coursera.jpg', altitle:'coursera'},{weburl:'https://reactjs.org', icons:'pic/reactjs.png', altitle:'react'},{weburl:'https://nodejs.org', icons:'pic/nodejs.jpg', altitle:'node'},{weburl:'https://www.freecodecamp.org/', icons:'pic/freecode.jpg', altitle:'freecodecamp'},{weburl:'https://www.w3schools.com/', icons:'pic/w3school.jpg', altitle:'w3schools'},{weburl:'https://vuejs.org/', icons:'pic/vuejs.jpg', altitle:'vuejs'},{weburl:'https://www.getbootstrap.com/', icons:'pic/bootstrap.jpg', altitle:'bootstrap'},{weburl:'https://github.com/', icons:'pic/github.jpg', altitle:'github'}
+                ]
+            }
+        }
+    }).mount('#smallapp')
 
     
 

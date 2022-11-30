@@ -91,30 +91,18 @@ html:not(.dark) .accent,.dark .tagline {
 background:-webkit-linear-gradient(315deg,#42d392 25%,#647eff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent
 }
 
-            div#box {
+            #box {
     display: inline-block;
     width: 300px;
     height: 350px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:0px;
-    background-color: rgb(247, 241, 241);
-           div#bookreading{
-    margin:auto;}
+    background-color: rgb(247, 241, 241);  
   }
   
-  
+  .clearfix::after {
+     conten:"";
+     clear: both;
+     display: table;}
 
-  div~a#website {
-    
-   
-    padding-left: 13px;
-    padding-top:13px;
-    background-color: rgb(247, 241, 241);
-    border-radius: 25px
-    
-   
-}
    img#websiteicon:hover {
      animation: shake 0.5s;
      animation-iteration-count: infinite;}
@@ -154,7 +142,7 @@ background:-webkit-linear-gradient(315deg,#42d392 25%,#647eff);background-clip:t
     
   }
 #headbar {
-  margin-top:-35px;
+  margin-top:-15px;
   margin-bottom:8px}
 
 
