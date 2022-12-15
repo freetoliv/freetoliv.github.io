@@ -111,11 +111,6 @@
         document.documentElement.setAttribute("data-theme", localStorage.getItem("colorMode"));
   
       </script>
-      
-    <video autoplay muted loop id="myVideo">
-        <source src="video/revenge.mp4" type="video/mp4">
-        Your browser does not support HTM5 video.
-    </video>
     
     <div class="container">
         
@@ -277,7 +272,7 @@
            
         
 
-        <div class="card shadow-lg rounded mx-auto" style="width:350px"  id="cardbook">
+        <div class="card shadow-lg rounded mx-auto" style="width:350px;display: none;"  id="cardbook">
             <div class="card-header justify-content-between" style="line-height:1px;margin-bottom:-15px;margin-top: 0px;">
                 <p><img src="pic/nassim.jpg" alt="myicoon" style="width:40px;" class="rounded-pill"> <strong><span style="font-size:10px">nassim taleb</span> </strong>
                 <a href="#" class="btn btn-primary right" >View Profile</a></p>
@@ -307,8 +302,8 @@
        
 
 
-        <ul class="pagination pagination-sm justify-content-center" style="margin:20px 0" id="pagenumber">
-            <li class="page-item"><a class="page-link" href="#" style="float: left;" v-for="item of pagenum">{{item}}</a></li>  
+        <ul class="pagination pagination-sm justify-content-center" style="margin:20px 0;" id="pagenumber">
+            <li class="page-item"><a class="page-link" href="#" style="float: left;background-color: transparent;color:white;border:none" v-for="item of pagenum">{{item}}</a></li>  
         </ul>
         
         <svg class="bi" width="32" height="32" fill="currentColor">
