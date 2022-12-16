@@ -1,7 +1,7 @@
 </html>
     <head>
         <title>SOME WONDERFUL BOOKS</title>
-        <link rel="icon" type="image/x-icon" href="pic/favicon.png">
+        <link rel="icon" type="image/x-icon" href="pic/reactjs.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,240 +15,57 @@
         * {
             box-sizing: border-box;
         }
-
-        #colomnpic img {
-            width:90px;
-            height: 90px;
-            border-radius: 50%;
-        }
-        #rowpic {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        padding: 0 4px;
-        }
-
-        #colomnpic {
-        -ms-flex:25%;
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
-        }
-
-        #colomnoic img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-        }
-
-
-        #myVideo {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%; 
-        min-height: 100%;
-        z-index:-1;
-        }
-
-        #myBtn {
-        width: 200px;
-        font-size: 18px;
-        padding: 10px;
-        border: none;
-        background: #000;
-        color: #fff;
-        cursor: pointer;
-        }
-
-        #myBtn:hover {
-        background: #ddd;
-        color: black;
-        }
-    
         @media screen and (min-width: 768px) {
-          #cardbook  {display: none}
           #mysitehead {display: none}
-          #headmoblie {display: none;}
-          #boxreading {display: none;}
+        }
+        @media screen and (max-width: 768px) { 
         }
 
-        @media screen and (max-width: 768px) {
-          #pagetitle {display: none}
-          #bookintro {display: none }
-          #slidepic  {display: none}
-          #tablebook {display: none}
-          #headicons {display: none;}
-          #headmoblie {display: none;}
-          #colomnpic {
-        -ms-flex: 25%;
-        flex:25%;
-        max-width: 25%;
+        #myswitch {
+            background-color:rgb(96, 95, 95);
+            position: relative;
+            top: 25px
         }
+        .batteryi {
+            position: relative;
+            top: 29px
         }
-
+        .headi {
+            margin-top:-10px;
+            margin-bottom:-10px
+        }
          </style>
     </head>
 
-<body class="navigation" onscroll="typeWriter()">
-    <script>
-        // Color mode changer script
-        const SetColorMode = () => {
-          if(localStorage.getItem("colorMode") === null) {
-            localStorage.setItem("colorMode", "light");
-          }
-  
-          if(localStorage.getItem("colorMode") === "light") {
-            localStorage.setItem("colorMode", "dark");
-          } else if (localStorage.getItem("colorMode") === "dark") {
-            localStorage.setItem("colorMode", "light");
-          }
-  
-          document.documentElement.setAttribute("data-theme", localStorage.getItem("colorMode"));
-        }
-  
-        document.documentElement.setAttribute("data-theme", localStorage.getItem("colorMode"));
-  
-      </script>
-    
-    <div class="container">
-        
-        
-            
-                
-                    <div class="container" >
-                        <div class="clearfix">
-                        
-                        <div class="float-start">
+    <body class="navigation" onscroll="typeWriter()">
+
+        <div class="container" >
+            <div class="clearfix headi">  
+                <div class="float-start">
                             <span style="color:#4285F4;font-size:40px;font-weight:400;">R</span><span style="color:#EA4335;font-size:30px;font-weight:400">u</span><span style="color:#FBBC05;font-size:30px;font-weight:400">s</span><span style="color:#4285F4;font-size:40px;font-weight:400">h</span><span style="color:#34A853;font-size:30px;font-weight:400">i</span><span style="color:#EA4335;font-size:30px;font-weight:400">i</span>
-                        </div>
-                        <div class="float-end">
-                            <a class=" form-check form-switch">
-                                <input onclick="SetColorMode()" class="form-check-input" id="myswitch" type="checkbox" name="darkmode"  style="background-color:rgb(96, 95, 95)" value="false" checked aria-disabled="true">
-                                <label class="form-check-label" for="myswitch"></label> </a>
-                            <a href="https://appleid.apple.com/sign-in"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Apple" target="_blank">
-                            <img src="pic/bootstrap-icons/apple.svg" class="mx-auto" alt="myappleid" width="16" height="16">
-                            <a>
-                            <a href="https://www.google.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google">
-                            <img src="pic/bootstrap-icons/google.svg" class="mx-auto" alt="mygoogle" width="15" height="15">
-                            <a>
-                            <a href="https://instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram">
-                            <img src="pic/bootstrap-icons/instagram.svg" class="mx-auto" alt="myinstagram" width="15" height="15">
-                            <a>
-                            <a href="#" class="link-info" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Share to friends">
-                            <img src="pic/bootstrap-icons/share.svg" class="mx-auto"  alt="myshare" width="15" height="15">
-                            <a>
-                            <a href="#signin" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in">
-                                <img src="pic/bootstrap-icons/person-circle.svg" alt="signin">
+                </div>
+                <div class="float-end" >
+                            <a class=" form-check form-switch " style="float:left">
+                                <input onclick="SetColorMode()" class="form-check-input" id="myswitch" type="checkbox" name="darkmode"  value="false" checked aria-disabled="true">
+                                <label class="form-check-label" for="myswitch"></label>
                             </a>
-                            <a href="#battery" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in">
+                            <a href="#battery" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in" class="batteryi">
                                 <span id="batterys" style="color:black" class="fa"></span>
-                            </a>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="modal" id="signin">
-                            <div class="modal-dialog modal-fullscreen-sm">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title mx-auto"><strong>Welcome to RSbook!</strong></h4>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form class="was-validated">
-                                            <div class="mb-3 mt-3 form-floating">
-                                                <label for="email" class="form-label" id="enter">Enter your email:</label>
-                                                <input type="email" class="form-control" id="email" placeholder="email" name="email" required>
-                                                <div class="valid-feedback">
-                                                    Input valid<img src="pic/bootstrap-icons/check2-circle.svg"></div>
-                                                <div class="invalid-feedback">Please input right form<img src="pic/bootstrap-icons/x-octagon.svg"> </div>
-                                            </div>
-                                            <div class="mb-3 form-floating">
-                                                <label for="pwd" class="form-label" id="enter">Enter your password:</label>
-                                                <input type="password" class="form-control" id="pwd" placeholder="password" name="pwd" required>
-                                                <div class="valid-feedback">
-                                                    Input valid<img src="pic/bootstrap-icons/check2-circle.svg"></div>
-                                                <div class="invalid-feedback">Please input right form<img src="pic/bootstrap-icons/x-octagon.svg"> </div>
-                                            </div>
-                                            <div class="form-check mb-3">
-                                                <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
-                                                <label class="form-check-label" for="mycheck">I agree on the terms and conditions</label>
-                                                <div class="valid-feedback">
-                                                    valid<img src="pic/bootstrap-icons/check2-circle.svg"></div>
-                                                <div class="invalid-feedback">Check this checkbox to continue<img src="pic/bootstrap-icons/x-octagon.svg"> </div>
-                                            </div>
-                                            <ul class="list-group">
-                                            <li class="list-group-item d-flex justify-content-between unborded"><button type="submit" class="btn btn-light">Sign in</button>
-                                            <a  type="button">Sign up</button></li></ul>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><hr>
-                
-            
-        
-        
-    
-    
-
-   
-        
-
-        <div class="list-group rounded">
-            <div id="headbar" >
-            
-                <ul class="nav nav-tabs" role="tablist" v-if="bookcate.length">
-                    <li class="nav-item" v-for="item of bookcate">
-                        <a class="nav-link" data-bs-toggle="tab" style="font-size:13px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" href="#item.id">{{item.name}}</a>
-                    </li>
-                </ul>
-            
-                <div class="tab-content">
-                    
-                        <div class="tab-pane container active"  v-for="item of bookcate" id="item.id">
-                            <h3></h3>
-                        </div>
-                    
-                    
+                            </a>    
                 </div>
             </div>
+        </div><hr>
 
+        <div class="list-group rounded">
             <div id="mysitehead" class="mx-auto">
                 <h1 class="tagline text-center"><span>The Book</span>
                 <br><span id="demod" class="accent"></span><br><span>Recommend</span>
                 </h1>
-                <audio src="music/Stand_up.mp3" playsong></audio>
+                <audio src="music/suzume.mp3" playsong></audio>
                 <div class="btn-group btngroupfell rounded">
-                    <button class="play btnfell"><img src="pic/bootstrap-icons/play-circle.svg"> Arise!!</button> 
+                    <button class="play btnfell"><img src="pic/bootstrap-icons/play-circle.svg"> I am here</button> 
                     <button class="pause btnfell"><img src="pic/bootstrap-icons/pause-circle.svg"></button>
                 </div>  
-            </div><hr>
-            
-            <div id="rowpic">
-                <div id="colomnpic">
-                    <img src="pic/nassim.jpg">
-                    <img src="pic/soros.jpg" >
-                    <img src="pic/chenduxiu.jpg" >
-                </div>
-                <div id="colomnpic">
-                    <img src="pic/riemann.jgp.jpg" >
-                    <img src="pic/hushizhi.jpg" >
-                    <img src="pic/teachmath.jpg" >
-                </div>
-                <div id="colomnpic">
-                    <img src="pic/rando.jpg" >
-                    <img src="pic/boer.jpg" >
-                    <img src="pic/einstein.jpg" >
-                    
-                </div>
-                <div id="colomnpic">
-                    <img src="pic/feynman.jpg" >
-                    <img src="pic/minkowski.jpg" >
-                    <img src="pic/euler.jpg" >
-                </div>
             </div><hr>
 
             <div id="speical-sponsor" class="mx-auto">
@@ -258,249 +75,143 @@
                 </a>
                 <p style="text-align:center;font-size:13px;">Open Source Firebase Alternative</p>
             </div><hr>
-        
 
-            
-                <div id="smallapp" style="float:left" >
-                    <div  v-for="site of sitecase" >
+            <div id="smallapp" style="float:left" >
+                <div  v-for="site of sitecase" >
                     <a style="float:left" id="website" v-bind:href="site.weburl" class="btn"><img id="websiteicon" v-bind:src="site.icons" v-bind:alt="site.altitle" style="position:relative;
                         width: 54px;height: 54px ;border-radius: 20px;"></a>
-                    </div>
-                </div><hr>
-                    
+                </div>
+            </div><hr>
 
-           
-        
+            <ul class="pagination pagination-sm justify-content-center"  id="pagenumber">
+                <li class="page-item"><a class="page-link" href="#" style="float: left;background-color: transparent;color:white;border:none" v-for="item of pagenum">{{item}}</a></li>  
+            </ul><hr>
 
-        <div class="card shadow-lg rounded mx-auto" style="width:350px;display: none;"  id="cardbook">
-            <div class="card-header justify-content-between" style="line-height:1px;margin-bottom:-15px;margin-top: 0px;">
-                <p><img src="pic/nassim.jpg" alt="myicoon" style="width:40px;" class="rounded-pill"> <strong><span style="font-size:10px">nassim taleb</span> </strong>
-                <a href="#" class="btn btn-primary right" >View Profile</a></p>
-            </div>
-            <img class="card-img-top" src="pic/conan.jpg" alt="bookicon" >
-            <div class="card-body" style="line-height:1px">
-            <a href="#" >View more about this book</a><hr style="margin-top:10px;margin-bottom:0px"/>
-            <a href="#" class="btn btn-sm d-flex justify-content-between align-items-right">
-                <img src="pic/bootstrap-icons/heart.svg"><img src="pic/bootstrap-icons/chat.svg"><img src="pic/bootstrap-icons/upload.svg">
-                <span class="badge rounded-pill justify-content-left"><img src="pic/bootstrap-icons/bookmark.svg"> </span>
-            </a>
-            <strong>7,985 likes</strong><hr style="margin-top:10px;margin-bottom:0px" />
-            <div class="input-group" >
-            <input type="text" class="form-control form-control-sm" placeholder="Add a comment...">
-            <span class="input-group-text bg-light"><img src="pic/bootstrap-icons/camera.svg"> </span>
-            </div>
-            </div>
-        </div>
-       
-        
-
-    
-        
-        
-        
-
-       
-
-
-        <ul class="pagination pagination-sm justify-content-center" style="margin:20px 0;" id="pagenumber">
-            <li class="page-item"><a class="page-link" href="#" style="float: left;background-color: transparent;color:white;border:none" v-for="item of pagenum">{{item}}</a></li>  
-        </ul>
-        
-        <svg class="bi" width="32" height="32" fill="currentColor">
-            <use xlink:href="pic/bootstrap-icons/heart-fill.svg"/>
-          </svg>
-          <svg class="bi" width="32" height="32" fill="currentColor">
-            <use xlink:href="pic/bootstrap-icons/toggles.svg"/>
-          </svg>
-          <svg class="bi" width="32" height="32" fill="currentColor">
-            <use xlink:href="pic/bootstrap-icons/alipay.svg"/>
-            
-          </svg>
-          <hr>
-        <ul class="breadcrumb justify-content-center">
-            <li class="breadcrumb-item"><a href="https://discord.gg/vHgjYW2z"  target="_blank">
-            <img src="pic/bootstrap-icons/discord.svg" class="mx-auto" alt="mydiscord" width="25" height="25">
-            <a></li>
-            <li class="breadcrumb-item"><a href="https://twitter.com/nntaleb" target="_blank">
-            <img src="pic/bootstrap-icons/twitter.svg" class="mx-auto" alt="mytwitter" width="25" height="25">
-            <a></li>
-            <li class="breadcrumb-item"><a href="https://github.com/freetoliv" target="_blank">
-            <img src="pic/bootstrap-icons/github.svg" class="mx-auto" alt="mygithub" width="25" height="25">
-            <a></li>
-            <li class="breadcrumb-item"><a href="#" class="link-info" target="_blank">
-            <img src="pic/bootstrap-icons/line.svg" class="mx-auto"  alt="myline" width="25" height="25">
-            <a></li>
+            <ul class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="https://discord.gg/vHgjYW2z"  target="_blank">
+                <img src="pic/bootstrap-icons/discord.svg" class="mx-auto" alt="mydiscord" width="25" height="25">
+                <a></li>
+                <li class="breadcrumb-item"><a href="https://twitter.com/nntaleb" target="_blank">
+                <img src="pic/bootstrap-icons/twitter.svg" class="mx-auto" alt="mytwitter" width="25" height="25">
+                <a></li>
+                <li class="breadcrumb-item"><a href="https://github.com/freetoliv" target="_blank">
+                <img src="pic/bootstrap-icons/github.svg" class="mx-auto" alt="mygithub" width="25" height="25">
+                <a></li>
+                <li class="breadcrumb-item"><a href="#" class="link-info" target="_blank">
+                <img src="pic/bootstrap-icons/line.svg" class="mx-auto"  alt="myline" width="25" height="25">
+                <a></li>
             </ul>
-    </div>
-    
-    <div class="container">
-        <h5 style="text-align:center">Subscribe to our weekly newsletter</h5>
-        <div class="input-group">
-            <form method="post" class="mx-auto">
-                <input class="input form-control-lg" id="memberemail" name="member[email]" type="email" placeholder="Email address"  required>
-                <input class="btn" id="membersubmit" name="membersubscribe" type="submit" value="subscribe" style="margin-left:-87px; margin-bottom:6px;padding:5px;background-color:#f02e65;color:white">  
-            </form>
         </div>
-        <p style="text-align:center">you can read the previous issues and listen<br> to our podcast at<a href="#" target="_blank"> rushi.org</a>, You may <br>also go social at <a href="#">Twitter</a>, or join our home at <a href="#">Discord</a>
-        .</p><br><hr><br>
-        
-    </div>
-
-    <script>
-
-    </script>
-    <script>
-
-        var i = 0;
-        var txt = ['The Book', 'Rushi', 'Recommed'];
-        var speed = 500;
-
-        function typeWriter() {
-        if (i < txt[1].length) {
-        document.getElementById("demod").innerHTML += txt[1].charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
-     
-    </script>
     
-        
+        <div class="container">
+            <h5 style="text-align:center">Subscribe to our weekly newsletter</h5>
+            <div class="input-group">
+                <form method="post" class="mx-auto">
+                    <input class="input form-control-lg" id="memberemail" name="member[email]" type="email" placeholder="Email address"  required>
+                    <input class="btn" id="membersubmit" name="membersubscribe" type="submit" value="subscribe" style="margin-left:-87px; margin-bottom:6px;padding:5px;background-color:#f02e65;color:white">  
+                </form>
+            </div>
+            <p style="text-align:center">you can read the previous issues and listen<br> to our podcast at<a href="#" target="_blank"> rushi.org</a>, You may <br>also go social at <a href="#">Twitter</a>, or join our home at <a href="#">Discord</a>
+            .</p><hr>
+        </div>
 
+        <script>
 
-    <script type="module">
-        import {createApp} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+            var i = 0;
+            var txt = ['The Book', 'Rushi', 'Recommed'];
+            var speed = 500;
 
-        createApp({
-            data() {
-                return {
-                    count: 0
+            function typeWriter() {
+            if (i < txt[1].length) {
+            document.getElementById("demod").innerHTML += txt[1].charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+            }
+        }
+        </script>
+
+        <script type="module">
+            import {createApp} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+            createApp({
+                data() {
+                    return {
+                        pagenum: ['❮', 1, 2, 3, 4, 5, 6, 7, 8, 9, '❯'],
+                    }
                 }
-            },
+            }).mount('#pagenumber')
+        
+            createApp({
+                data() {
+                    return {
+                        sitecase: [
+                            {weburl:'healthco.html', icons:'pic/health.jpg', altitle:'mycode'}, {weburl:'shinomus.html', icons:'pic/shino.jpg', altitle:'mymusic'},{weburl:'music.html', icons:'pic/spotify.jpg', altitle:'mymusic'},{weburl:'https://code.visualstudio.com/', icons:'pic/vscode.jpg', altitle:'vscode'},{weburl:'https://developer.mozilla.org/en-US', icons:'pic/mozilla.jpg', altitle:'mozilla'},{weburl:'https://www.meta.com', icons:'pic/meta.jpg', altitle:'meta'},{weburl:'https://discordapp.com/', icons:'pic/discord.jpg', altitle:'discord'},{weburl:'https://en.wikipedia.org/', icons:'pic/wikipedia.jpg', altitle:'wikipedia'},{weburl:'https://reactjs.org', icons:'pic/zlibrary.jpg', altitle:'zlibrary'},{weburl:'https://www.coursera.org', icons:'pic/coursera.jpg', altitle:'coursera'},{weburl:'https://reactjs.org', icons:'pic/reactjs.png', altitle:'react'},{weburl:'https://nodejs.org', icons:'pic/nodejs.jpg', altitle:'node'},{weburl:'https://www.freecodecamp.org/', icons:'pic/freecode.jpg', altitle:'freecodecamp'},{weburl:'https://www.w3schools.com/', icons:'pic/w3school.jpg', altitle:'w3schools'},{weburl:'https://vuejs.org/', icons:'pic/vuejs.jpg', altitle:'vuejs'},{weburl:'https://www.getbootstrap.com/', icons:'pic/bootstrap.jpg', altitle:'bootstrap'},{weburl:'https://github.com/', icons:'pic/github.jpg', altitle:'github'},{weburl:'placecode.html', icons:'pic/placecode.jpg', altitle:'localcode'},
+                            {weburl:'readtxt.html', icons:'pic/download.jpg', altitle:'research'},
+                            {weburl:'peiwen.html', icons:'pic/peiwen.png', altitle:'peiwen'}
 
-        methods: {
-            increment() {
-                this.count--
+                        ]
+                    }
+                }
+            }).mount('#smallapp')
+
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltiplist =tooltipTriggerList.map(function (tooltipTriggerE1){
+                return new bootstrap.Tooltip(tooltipTriggerE1)
+            })
+
+            document.querySelector(".play").onclick = event => {
+                document.querySelector("[playsong]").play()
             }
-        },
-
-        mounted() {
-            console.log(this.count)
-            this.increment()
-            this.count = 338949
-        },     
-     }).mount('#app')
-    
-    createApp({
-        data() {
-            return {
-                isRed: false,
-                color: 'white',
+            document.querySelector(".pause").onclick = event => {
+                document.querySelector("[playsong]").pause()
             }
-        },
 
-        methods: {
-            toggleRed() {
-                this.isRed = !this.isRed
-            },
-            toggleColor() {
-                this.color = this.color === 'white'? 'red' : 'white' 
+            function chargebattery() {
+                var a;
+                a = document.getElementById("batterys");
+                a.innerHTML = "&#xf244;";
+                a.style.color = "red";
+                setTimeout(function () {
+                    a.innerHTML = "&#xf243;";
+                    a.style.color = "darkred";
+                }, 1000);
+                setTimeout(function () {
+                    a.innerHTML = "&#xf242;";
+                    a.style.color = "yellow";
+                }, 2000);
+                setTimeout(function () {
+                    a.innerHTML = "&#xf241;";
+                    a.style.color = "green";
+                }, 3000);
+                setTimeout(function () {
+                    a.innerHTML = "&#xf240;";
+                    a.style.color = "black";
+                }, 5000);
             }
-        }
-    }).mount('#pagetitle')
-
-    createApp({
-        data() {
-            return {
-                bookcate: [
-                    { id: 1, name:'Mathematic'}, {id: 2, name: 'History'}, {id: 3, name: 'Economy'} ,  {id: 4, name:'Philosophy'}, {id: 5, name: 'Bussiness'},  {id: 6, name: 'Computer'}, {id: 7, name: 'Medical'}, {id: 8, name: 'Medical'}, {id: 9, name: 'Politics'}, {id: 10, name: 'Literature'}, {id: 11, name: 'More'}
-                ]
-            }
-        }
-    }).mount('#headbar')
-
-    createApp({
-        data() {
-            return {
-                pagenum: ['❮', 1, 2, 3, 4, 5, 6, 7, 8, 9, '❯'],
-            }
-        }
-    }).mount('#pagenumber')
-    
-
-    createApp({
-        data() {
-            return {
-                sitecase: [
-                    {weburl:'healthco.html', icons:'pic/health.jpg', altitle:'mycode'}, {weburl:'shinomus.html', icons:'pic/shino.jpg', altitle:'mymusic'},{weburl:'music.html', icons:'pic/spotify.jpg', altitle:'mymusic'},{weburl:'https://code.visualstudio.com/', icons:'pic/vscode.jpg', altitle:'vscode'},{weburl:'https://developer.mozilla.org/en-US', icons:'pic/mozilla.jpg', altitle:'mozilla'},{weburl:'https://www.meta.com', icons:'pic/meta.jpg', altitle:'meta'},{weburl:'https://discordapp.com/', icons:'pic/discord.jpg', altitle:'discord'},{weburl:'https://en.wikipedia.org/', icons:'pic/wikipedia.jpg', altitle:'wikipedia'},{weburl:'https://reactjs.org', icons:'pic/zlibrary.jpg', altitle:'zlibrary'},{weburl:'https://www.coursera.org', icons:'pic/coursera.jpg', altitle:'coursera'},{weburl:'https://reactjs.org', icons:'pic/reactjs.png', altitle:'react'},{weburl:'https://nodejs.org', icons:'pic/nodejs.jpg', altitle:'node'},{weburl:'https://www.freecodecamp.org/', icons:'pic/freecode.jpg', altitle:'freecodecamp'},{weburl:'https://www.w3schools.com/', icons:'pic/w3school.jpg', altitle:'w3schools'},{weburl:'https://vuejs.org/', icons:'pic/vuejs.jpg', altitle:'vuejs'},{weburl:'https://www.getbootstrap.com/', icons:'pic/bootstrap.jpg', altitle:'bootstrap'},{weburl:'https://github.com/', icons:'pic/github.jpg', altitle:'github'},{weburl:'placecode.html', icons:'pic/placecode.jpg', altitle:'localcode'},
-                    {weburl:'readtxt.html', icons:'pic/download.jpg', altitle:'research'},
-                    {weburl:'peiwen.html', icons:'pic/peiwen.png', altitle:'peiwen'}
-
-                ]
-            }
-        }
-    }).mount('#smallapp')
-
-    
-
-
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltiplist =tooltipTriggerList.map(function (tooltipTriggerE1){
-        return new bootstrap.Tooltip(tooltipTriggerE1)
-    })
-
-    document.querySelector(".play").onclick = event => {
-        document.querySelector("[playsong]").play()
-    }
-    document.querySelector(".pause").onclick = event => {
-        document.querySelector("[playsong]").pause()
-    }
-
-    var video = document.getElementById("myVideo");
-    var bttn = document.getElementById("myBtn");
-
-    function myFunction() {
-        if(video.paused) {
-            video.play();
-            bttn.innerHTML = "Pause";
-        } else{
-            video.pause();
-            bttn.innerHTML = "Play";
-        }
-    }
-
-    function chargebattery() {
-        var a;
-        a = document.getElementById("batterys");
-        a.innerHTML = "&#xf244;";
-        a.style.color = "red";
-        setTimeout(function () {
-            a.innerHTML = "&#xf243;";
-            a.style.color = "darkred";
-        }, 1000);
-        setTimeout(function () {
-            a.innerHTML = "&#xf242;";
-            a.style.color = "yellow";
-        }, 2000);
-        setTimeout(function () {
-            a.innerHTML = "&#xf241;";
-            a.style.color = "green";
-        }, 3000);
-        setTimeout(function () {
-            a.innerHTML = "&#xf240;";
-            a.style.color = "black";
-        }, 5000);
-    }
-    chargebattery();
-    setInterval(chargebattery, 5000);
-
-    
-   </script>
-    
- 
-    
-</body>
-<footer class="text-center" style="font-size:10px">Released under the <strong>MIT License</strong><br/>
-             Copyright <img src="pic/bootstrap-icons/c-circle.svg" style="width:8px;height:8px" alt="c"> 1999-2099 RuShi
-</footer>
+            chargebattery();
+            setInterval(chargebattery, 5000);
+        </script>
+        <script>
+                // Color mode changer script
+                const SetColorMode = () => {
+                if(localStorage.getItem("colorMode") === null) {
+                    localStorage.setItem("colorMode", "light");
+                }
+        
+                if(localStorage.getItem("colorMode") === "light") {
+                    localStorage.setItem("colorMode", "dark");
+                } else if (localStorage.getItem("colorMode") === "dark") {
+                    localStorage.setItem("colorMode", "light");
+                }
+        
+                document.documentElement.setAttribute("data-theme", localStorage.getItem("colorMode"));
+                }
+        
+                document.documentElement.setAttribute("data-theme", localStorage.getItem("colorMode"));
+        
+        </script>
+    </body>
+    <footer class="text-center" style="font-size:10px">Released under the <strong>MIT License</strong><br/>
+                Copyright <img src="pic/bootstrap-icons/c-circle.svg" style="width:8px;height:8px" alt="c"> 1999-2099 RuShi
+    </footer>
 </html>
